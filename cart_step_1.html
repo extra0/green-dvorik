@@ -140,8 +140,80 @@
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Продукция</a></li>
                 <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Мой Кабинет</a></li>
-                <li class="breadcrumbs__item"><span class="breadcrumbs__current-link">Моя Корзина	</span></li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__current-link">Моя Корзина</span></li>
               </ul>
+            </div>
+            <div class="cart-step__block"><a href="#" class="cart-step__link active">Шаг 1. Выбор</a><a href="#" class="cart-step__link">Шаг 2. Оформление</a><a href="#" class="cart-step__link">Шаг 3. Отправка</a></div>
+            <div class="cart-step__inner-block">
+              <table class="cart-step__product-table">
+                <tr>
+                  <td class="cart-step__product-item"><a href="#"><img src="img/content/cart_product.jpg" alt="" class="cart-step__product-img"></a></td>
+                  <td class="cart-step__product-item"><a href="#" class="cart-step__product-name">Фундук московский рубин</a>
+                    <p class="cart-step__product-age">Возраст/Размер: 7 лет</p>
+                  </td>
+                  <td class="cart-step__product-item"><span class="cart-step__quantity-changer glyphicon glyphicon-minus"></span>
+                    <input type="text" value="1" class="cart-step__quantity-input"><span class="cart-step__quantity-changer glyphicon glyphicon-plus"></span>
+                  </td>
+                  <td class="cart-step__product-item">
+                    <p class="cart-step__product-price"> <span class="cart-step__product-cost">15000</span>руб.</p>
+                  </td>
+                  <td class="cart-step__product-item"><a href="#" class="cart-step__item-delete">удалить</a></td>
+                </tr>
+                <tr>
+                  <td class="cart-step__product-item"><a href="#"><img src="img/content/cart_product.jpg" alt="" class="cart-step__product-img"></a></td>
+                  <td class="cart-step__product-item"><a href="#" class="cart-step__product-name">Фундук московский рубин</a>
+                    <p class="cart-step__product-age">Возраст/Размер: 7 лет</p>
+                  </td>
+                  <td class="cart-step__product-item"><span class="cart-step__quantity-changer glyphicon glyphicon-minus"></span>
+                    <input type="text" value="1" class="cart-step__quantity-input"><span class="cart-step__quantity-changer glyphicon glyphicon-plus"></span>
+                  </td>
+                  <td class="cart-step__product-item">
+                    <p class="cart-step__product-price"> <span class="cart-step__product-cost">15000</span>руб.</p>
+                  </td>
+                  <td class="cart-step__product-item"><a href="#" class="cart-step__item-delete">удалить</a></td>
+                </tr>
+              </table>
+              <table class="cart-step__plant-table">
+                <tr>
+                  <td class="cart-step__plant-item"><img src="img/plant.png" alt="" class="cart-step__plant-img"></td>
+                  <td class="cart-step__plant-item">
+                    <p class="cart-step__plant-text-title">Посадка растений</p>
+                    <p class="cart-step__plant-text">Мы готовы посадить для Вас заказанные растения всего за <span>20%</span> от их стоимости!</p><a href="javascript:void(0);" class="cart-step__plant-detail-link">Подробнее об услуге</a>
+                    <div class="cart-step__plant-detail-block">
+                      <p>Посадка растений  c гарантией Теперь Вы заказываете посадку с гарантией!Всего за 50% от стоимости растений мы берем на себя риски и бесплатно заменяем Ваши растения, если они не прижились в течение года.</p>
+                    </div>
+                  </td>
+                  <td class="cart-step__plant-item">
+                    <p class="cart-step__product-price"> <span class="cart-step__product-cost">6000</span>руб.</p>
+                  </td>
+                  <td class="cart-step__plant-item">
+                    <input id="plant" type="checkbox" checked class="cart-step__plant-checkbox">
+                    <label for="plant" class="cart-step__plant-label-checkbox"></label>
+                  </td>
+                </tr>
+              </table>
+              <table class="cart-step__plant-table">
+                <tr>
+                  <td class="cart-step__plant-item"><img src="img/garranty_plant.png" alt="" class="cart-step__plant-img"></td>
+                  <td class="cart-step__plant-item">
+                    <p class="cart-step__plant-text-title">Посадка растений  c гарантией</p>
+                    <p class="cart-step__plant-text">Теперь Вы заказываете посадку с гарантией! Всего за <span>50%</span> от стоимости растений мы берем на себя риски и бесплатно заменяем Ваши растения, если они не прижились в течение года.</p><a href="javascript:void(0);" class="cart-step__plant-detail-link">Подробнее об услуге</a>
+                    <div class="cart-step__plant-detail-block">
+                      <p>Посадка растений  c гарантией Теперь Вы заказываете посадку с гарантией!Всего за 50% от стоимости растений мы берем на себя риски и бесплатно заменяем Ваши растения, если они не прижились в течение года.</p>
+                    </div>
+                  </td>
+                  <td class="cart-step__plant-item">
+                    <p class="cart-step__product-price"> <span class="cart-step__product-cost">15000</span>руб.</p>
+                  </td>
+                  <td class="cart-step__plant-item">
+                    <input id="garranty_plant" type="checkbox" checked class="cart-step__plant-checkbox">
+                    <label for="garranty_plant" class="cart-step__plant-label-checkbox"></label>
+                  </td>
+                </tr>
+              </table>
+              <div class="cart-step__total-price-block">
+                <p class="cart-step__product-price"> <span class="cart-step__product-cost">Итого: </span><span class="cart-step__product-cost">36000</span>руб.</p><a href="#" class="cart-step__next-link">Далее</a>
+              </div>
             </div>
           </div>
         </div>
@@ -154,24 +226,26 @@
           <div class="footer__sidebar col-lg-3">
             <p class="footer__sidebar-development-text">Создание и продвижение сайта:</p><a href="http://dvaslona.ru" class="footer__sidebar-development-link"><img src="img/footer_dev_logo.png" alt="" class="footer__sidebar-development-img"></a>
           </div>
-          <div class="footer__content col-lg-9">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Продажа крупномеров</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Плодовые саженцы</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Услуги</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Фотогалерея</a></li>
-              <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
-            </ul>
-            <p class="footer__text">© Зеленый дворик, 2007-2015</p>
-            <p class="footer__text">г. Москва, 96-ой км МКАД (450 метров), Лесная зона в микрорайоне Дружба</p>
-            <p class="footer__text"><strong>Москва</strong></p>
-            <p class="footer__text">8-925-881-01-90</p>
-            <p class="footer__text">8-916-426-69-88</p>
-            <p class="footer__text">8-916-241-25-79</p>
-            <p class="footer__text"><strong>Мичуринск</strong></p>
-            <p class="footer__text">8-916-636-85-28</p>
+          <div class="footer__content-wrap col-lg-9">
+            <div class="footer__content">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Продажа крупномеров</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Плодовые саженцы</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Услуги</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Фотогалерея</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+              </ul>
+              <p class="footer__text">© Зеленый дворик, 2007-2015</p>
+              <p class="footer__text">г. Москва, 96-ой км МКАД (450 метров), Лесная зона в микрорайоне Дружба</p>
+              <p class="footer__text"><strong>Москва</strong></p>
+              <p class="footer__text">8-925-881-01-90</p>
+              <p class="footer__text">8-916-426-69-88</p>
+              <p class="footer__text">8-916-241-25-79</p>
+              <p class="footer__text"><strong>Мичуринск</strong></p>
+              <p class="footer__text">8-916-636-85-28</p>
+            </div>
           </div>
         </div>
       </div>

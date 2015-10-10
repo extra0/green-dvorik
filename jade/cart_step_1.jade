@@ -133,4 +133,84 @@ block content
 						li.breadcrumbs__item
 							a.breadcrumbs__link(href="#") Мой Кабинет
 						li.breadcrumbs__item
-							span.breadcrumbs__current-link Моя Корзина	
+							span.breadcrumbs__current-link Моя Корзина
+				.cart-step__block
+					a.cart-step__link.active(href="#") Шаг 1. Выбор
+					a.cart-step__link(href="#") Шаг 2. Оформление
+					a.cart-step__link(href="#") Шаг 3. Отправка
+				.cart-step__inner-block
+					table.cart-step__product-table
+						tr
+							td.cart-step__product-item
+								a(href="#")
+									img.cart-step__product-img(src="img/content/cart_product.jpg", alt="")
+							td.cart-step__product-item
+								a.cart-step__product-name(href="#") Фундук московский рубин
+								p.cart-step__product-age Возраст/Размер: 7 лет
+							td.cart-step__product-item
+								span.cart-step__quantity-changer.glyphicon.glyphicon-minus
+								input.cart-step__quantity-input(type="text" value="1")
+								span.cart-step__quantity-changer.glyphicon.glyphicon-plus
+							td.cart-step__product-item
+								p.cart-step__product-price 
+									span.cart-step__product-cost 15000
+									| руб.
+							td.cart-step__product-item
+								a.cart-step__item-delete(href="#") удалить
+						tr
+							td.cart-step__product-item
+								a(href="#")
+									img.cart-step__product-img(src="img/content/cart_product.jpg", alt="")
+							td.cart-step__product-item
+								a.cart-step__product-name(href="#") Фундук московский рубин
+								p.cart-step__product-age Возраст/Размер: 7 лет
+							td.cart-step__product-item
+								span.cart-step__quantity-changer.glyphicon.glyphicon-minus
+								input.cart-step__quantity-input(type="text" value="1")
+								span.cart-step__quantity-changer.glyphicon.glyphicon-plus
+							td.cart-step__product-item
+								p.cart-step__product-price 
+									span.cart-step__product-cost 15000
+									| руб.
+							td.cart-step__product-item
+								a.cart-step__item-delete(href="#") удалить
+					table.cart-step__plant-table
+						tr
+							td.cart-step__plant-item
+								img.cart-step__plant-img(src="img/plant.png", alt="")
+							td.cart-step__plant-item
+								p.cart-step__plant-text-title Посадка растений
+								p.cart-step__plant-text Мы готовы посадить для Вас заказанные растения всего за <span>20%</span> от их стоимости!
+								a.cart-step__plant-detail-link(href="javascript:void(0);") Подробнее об услуге
+								.cart-step__plant-detail-block
+									p Посадка растений  c гарантией Теперь Вы заказываете посадку с гарантией!Всего за 50% от стоимости растений мы берем на себя риски и бесплатно заменяем Ваши растения, если они не прижились в течение года.
+							td.cart-step__plant-item
+								p.cart-step__product-price 
+									span.cart-step__product-cost 6000
+									| руб.
+							td.cart-step__plant-item
+								input.cart-step__plant-checkbox#plant(type="checkbox" checked)
+								label.cart-step__plant-label-checkbox(for="plant")
+					table.cart-step__plant-table
+						tr
+							td.cart-step__plant-item
+								img.cart-step__plant-img(src="img/garranty_plant.png", alt="")
+							td.cart-step__plant-item
+								p.cart-step__plant-text-title Посадка растений  c гарантией
+								p.cart-step__plant-text Теперь Вы заказываете посадку с гарантией! Всего за <span>50%</span> от стоимости растений мы берем на себя риски и бесплатно заменяем Ваши растения, если они не прижились в течение года.
+								a.cart-step__plant-detail-link(href="javascript:void(0);") Подробнее об услуге
+								.cart-step__plant-detail-block
+									p Посадка растений  c гарантией Теперь Вы заказываете посадку с гарантией!Всего за 50% от стоимости растений мы берем на себя риски и бесплатно заменяем Ваши растения, если они не прижились в течение года.
+							td.cart-step__plant-item
+								p.cart-step__product-price 
+									span.cart-step__product-cost 15000
+									| руб.
+							td.cart-step__plant-item
+								input.cart-step__plant-checkbox#garranty_plant(type="checkbox" checked)
+								label.cart-step__plant-label-checkbox(for="garranty_plant")
+					.cart-step__total-price-block
+						p.cart-step__product-price 
+							span.cart-step__product-cost Итого: 
+							span.cart-step__product-cost 36000
+							| руб.
+						a.cart-step__next-link(href="#") Далее
