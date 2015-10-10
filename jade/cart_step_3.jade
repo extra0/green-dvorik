@@ -136,58 +136,26 @@ block content
 							span.breadcrumbs__current-link Моя Корзина
 				.cart-step__block
 					a.cart-step__link(href="#") Шаг 1. Выбор
-					a.cart-step__link.active(href="#") Шаг 2. Оформление
-					a.cart-step__link(href="#") Шаг 3. Отправка
+					a.cart-step__link(href="#") Шаг 2. Оформление
+					a.cart-step__link.active(href="#") Шаг 3. Отправка
 				.cart-step__inner-block
-					form(action="#" method="post")
-						.cart-step__form-block
-							p.cart-step__form-title Покупатель
-							input.cart-step__form-radio#individual(type="radio" name="buyer" checked)
-							label.cart-step__form-label(for="individual") Физическое лицо
-							input.cart-step__form-radio#entity(type="radio" name="buyer")
-							label.cart-step__form-label(for="entity") Юридическое лицо
-							.cart-step__form-input-block
-								.cart-step__form-control
-									span.cart-step__form-icon.glyphicon.glyphicon-user
-									input.cart-step__form-input(type="text" placeholder="Ф.И.О" required)
-								.cart-step__form-control
-									span.cart-step__form-icon.glyphicon.glyphicon-envelope							
-									input.cart-step__form-input(type="email" placeholder="E-mail" required)
-								.cart-step__form-control
-									span.cart-step__form-icon.glyphicon.glyphicon-earphone						
-									input.cart-step__form-input(type="tel" placeholder="Телефон" required)
-							textarea.cart-step__form-textarea(placeholder="Комментарии к заказу")
-						.cart-step__form-block
-							p.cart-step__form-title Доставка
-							.cart-step__form-input-block
-								.cart-step__form-control._half-block
-									span.cart-step__form-icon.glyphicon.glyphicon-map-marker
-									input.cart-step__form-input(type="text" placeholder="Город, регион" required)
-								.cart-step__form-control._half-block
-									span.cart-step__form-icon.glyphicon.glyphicon-home
-									input.cart-step__form-input(type="text" placeholder="Улица, дом" required)
-							.cart-step__radio-wrap
-								input.cart-step__form-radio#auto_delivery(type="radio" name="delivery" checked)
-								label.cart-step__form-label(for="auto_delivery") Доставка автомобилем
-								p.cart-step__radio-description Стоимость доставки а/м Газель составляет 60 руб./ км. в пределах Москвы и Московской области. Доставка в другие города – стоимость и вид транспорта по договоренности. Крупномерный посадочный материал – доставка краном-манипулятором по договорной цене.
-							.cart-step__radio-wrap
-								input.cart-step__form-radio#pickup(type="radio" name="delivery")
-								label.cart-step__form-label(for="pickup") Самовывоз
-						.cart-step__form-block._marg-bottom
-							p.cart-step__form-title Способ оплаты
-							.cart-step__pay-block
-								ul.cart-step__pay-list
-									li.cart-step__pay-item
-										img.cart-step__pay-img(src="img/pay_1.png", alt="")
-										input.cart-step__radio-pay-input#pay_method_1(type="radio" name="pay" checked)
-										label.cart-step__pay-label(for="pay_method_1") На расчетный счет
-									li.cart-step__pay-item
-										img.cart-step__pay-img(src="img/pay_2.png", alt="")
-										input.cart-step__radio-pay-input#pay_method_2(type="radio" name="pay")
-										label.cart-step__pay-label(for="pay_method_2") На карту Сбербанка
-									li.cart-step__pay-item
-										img.cart-step__pay-img(src="img/pay_3.png", alt="")
-										input.cart-step__radio-pay-input#pay_method_3(type="radio" name="pay")
-										label.cart-step__pay-label(for="pay_method_3") Наличными при<br>получении товара
-						.cart-step__footer-block
-							input.cart-step__next-link(type="submit" value="Оформить")
+					.cart-step__order-block
+						p.cart-step__order-text Спасибо, что выбрали нас!
+						p.cart-step__order-text Ваш заказ №8021 от 15.09.2015 10:20:42 успешно создан. Наши менеджеры в ближайшее время свяжутся с Вами для уточнения деталей.
+					p.cart-step__view Вы можете следить за выполнением своего заказа в 
+						a(href="#") Персональном разделе сайта
+					a.cart-step__order-info-btn(href="#") Открыть информацию о заказе
+					.cart-step__remember-block
+						p.cart-step__order-text Напоминаем вам данные для использования личного кабинета
+						p.cart-step__remember-info
+							span.cart-step__remember-title Ваш логин для входа в личный кабинет: 
+							| test2
+						p.cart-step__remember-info
+							span.cart-step__remember-title Пароль:
+							| fX2wY23R /
+							a.cart-step__remember-link(href="#") задать
+							| /
+							a.cart-step__remember-link(href="#") изменить свой пароль
+						p.cart-step__remember-info
+							span.cart-step__remember-title E-mail:
+							| test2@mail.ru

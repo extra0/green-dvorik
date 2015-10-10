@@ -617,6 +617,7 @@
 		.gradient-green;
 		padding: 7px 37px 5px 37px;
 		margin-left: 33px;
+		border: none;
 		color: #fff;
 		font-size: 16px;
 		display: inline-block;
@@ -736,6 +737,61 @@
 	&__radio-pay-input {
 		&:checked + label {
 			border: 2px solid @green;
+		}
+	}
+	&__order-block {
+		margin: 10px 0 23px 0;
+	}
+	&__order-text {
+		margin: 0;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	&__view {
+		margin: 0 0 48px;
+		a {
+			color: @light-green;
+			text-decoration: underline;
+			&:hover {
+				color: @light-green;
+				text-decoration: none;
+			}
+		}
+	}
+	&__order-info-btn {
+		.gradient-green;
+		color: #fff;
+		margin-bottom: 9px;
+		font-size: 16px;
+		padding:6px 27px 7px 27px;
+		display: inline-block;
+		&:hover {
+			.hover-gradient;
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	&__remember-block {
+		margin: 0;
+	}
+	&__remember-title {
+		color: @yellow;
+		display: inline-block;
+		margin-right: 5px;
+	}
+	&__remember-info {
+		margin: 0;
+	}
+	&__remember-link {
+		display: inline-block;
+		color: #fff;
+		margin: 0 5px;
+		text-decoration: underline;
+		&:focus,
+		&:active,
+		&:hover {
+			color: #fff;
+			text-decoration: none;
 		}
 	}
 }
