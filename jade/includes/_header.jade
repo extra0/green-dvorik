@@ -1,4 +1,42 @@
 header.header
-	.container-fluid
-		a.header__logo(href="/")
-			img(src="img/logo.png" alt="Site Logo")
+	.container
+		.row
+			.header-sidebar__block.pull-right.col-lg-3
+				p.header-sidebar__city Москва
+				.header-sidebar__phone-block
+					a.header-sidebar__phone(href="tel:+89258810190") 8-925-881-01-90
+					a.header-sidebar__phone(href="tel:+89164266988") 8-916-426-69-88
+					a.header-sidebar__phone(href="tel:+89162412579") 8-916-241-25-79
+				p.header-sidebar__city Мичуринск
+				.header-sidebar__phone-block
+					a.header-sidebar__phone(href="tel:+89166368528") 8-916-636-85-28
+					a.header-sidebar__callback.fancybox(href="#") Заказать обратный звонок
+			.col-lg-9
+				.row
+					.col-lg-4
+						a.header__logo(href="/")
+							img(src="img/logo.png" alt="Site Logo")
+						p.header__logo-text КРЕСТЬЯНСКО-ФЕРМЕРСКОЕ ХОЗЯЙСТВО
+					.header__info-block.col-lg-4
+						h2.header__info-title ПЛОДОВЫЕ И ХВОЙНЫЕ ДЕРЕВЬЯ-КРУПНОМЕРЫ ИЗ ПИТОМНИКА
+						p.header__info-text г. Москва, 96-ой км МКАД (450 метров), Лесная зона в микрорайоне Дружба
+					.header__user-info-block.col-lg-4
+						.header__user-info-block
+							form.header__user-info-form(action="#" method="post")
+								input.header__user-info-input(type="text" required placeholder="Поиск по сайту")
+								input.header__user-info-submit(type="submit" value="")
+							a.header__user-enter(href="#") Вход по паролю
+								span.header__user-icon-enter.glyphicon.glyphicon-user
+							br
+							a.header__user-cart(href="#") 
+								span.header__user-icon-cart.glyphicon.glyphicon-shopping-cart
+								span.header__user-cart-quantity 5 
+								| товаров на сумму 
+								span.header__user-cart-total-price 5000
+					.banner__block.col-lg-12
+						a(href="#")
+							img.banner__img(src="img/content/header-banner.jpg", alt="")
+					.header__main-menu-block.col-lg-12
+						ul.header__main-menu-list
+							each item in menu
+								li.header__main-menu-item: a.header__main-menu-link(href="#") #{item}
