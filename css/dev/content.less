@@ -228,6 +228,7 @@
 			margin: 0 0 16px;
 			font-size: 18px;
 			color: #fff;
+			line-height: 23px;
 			-webkit-transition: all 0.4s ease;
 			-moz-transition: all 0.4s ease;
 			-ms-transition: all 0.4s ease;
@@ -491,6 +492,9 @@
 		border: none;
 		font-size: 16px;
 		margin: 28px 8px 0 4px;
+		&._product-quantity {
+			margin: 0px 8px 0 4px;
+		}
 	}
 	&__product-price {
 		color: @yellow;
@@ -797,8 +801,20 @@
 }
 /* странциа продукта */
 .product {
-	&__block {
-
+	&__slider {
+		position: relative;
+		&._new {
+			&:before {
+				content: '';
+				position: absolute;
+				width: 103px;
+				height: 102px;
+				bottom: 0;
+				right: -1px;
+				z-index: 2;
+				background: url(../img/new.png) 0 0 no-repeat;
+			}
+		}
 	}
 	&__title {
 		.gradient-green;
@@ -807,10 +823,180 @@
 		margin: 0 0 29px 0;
 		font-family: @gothic;
 		padding: 5px 18px 6px 18px;
+		&._marg-bottom {
+			margin-bottom: 10px;
+		}
 	}
-	&__description-block {}
 	&__description-text {
 		margin: 0;
 		line-height: 17px;
+	}
+	&__info-price-table {
+		width: 100%;
+		td {
+			padding: 4px 0 3px 0;
+		}
+		tr {
+			&:last-child,
+			&:first-child{
+				border-bottom: none;
+			}
+			border-bottom: 1px solid #808080;
+		}
+	}
+	&__info-price-table-title {
+		color: @light-green;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-family: @gothic;
+		padding-bottom: 8px;
+	}
+	&__plant-age-info {
+		width: 20px;
+		height: 18px;
+		background: url(../img/info.png) 0 0 no-repeat;
+		display: inline-block;
+		margin: 0 0 0 10px;
+		position: relative;
+		top: 4px;
+		&:hover {
+			background-position: -23px 0px;
+		}
+	}
+	&__info-plant-quantity {
+		text-align: right;
+	}
+	&__info-plant-age {
+		width: 18%;
+	}
+	&__info-plant-price  {
+		color: @yellow;
+		width: 25%;
+		text-align: center;
+	}
+	&__info-plant-cost {
+		display: inline-block;
+	}
+	&__info-price-currency {
+		font-size: 12px;
+		display: inline-block;
+		margin-left: 4px;
+	}
+	&__info-plant-submit {
+		background: @yellow;
+		border: none;
+		color: #000;
+		font-size: 16px;
+		height: 27px;
+		width: 116px;
+		margin-top: 18px;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:hover {
+			background: @dark-green;
+			color: #fff;
+		}
+	}
+	&__info-table-price-block {
+		margin-bottom: 33px;
+	}
+}
+/* блок внимания в продукте */
+.attention {
+	&__block {
+		margin-bottom: 31px;
+		text-align: center;
+		border: 1px solid #172c17;
+	}
+	&__title {
+		color: @green;
+		position: relative;
+		z-index: 2;
+		top: -32px;
+		background: #000;
+		position: relative;
+		font-weight: normal;
+		font-size: 18px;
+		font-family: @gothic;
+		display: inline-block;
+		padding: 0 30px;
+	}
+	&__list {
+		padding: 0;
+		margin: -17px 0 13px 0;
+		list-style-type: none;
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: bottom;
+		width: 20%;
+		position: relative;
+		&:nth-child(2) {
+			margin: 0 18px 0 0px;
+			width: 15%;
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				width: 1px;
+				height: 76px;
+				background: #162a16;
+			}
+			&:before {
+				left: 0;
+			}
+			&:after {
+				right: 0;
+			}
+		}
+	}
+	&__img {
+		display: block;
+		margin: 0 auto 9px auto;
+	}
+	&__text {
+		text-transform: uppercase;
+		font-family: @gothic;
+		margin: 0;
+	}
+}
+/* блок преимуществ в продукте */
+.advantages {
+	&__block {
+		text-align: center;
+	}
+	&__title {
+		font-size: 16px;
+		color: @yellow;
+		background: #062f06;
+		font-family: @gothic;
+		line-height: 30px;
+		margin: 0 0 42px 0;
+	}
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0 0 45px 0;
+	}
+	&__item {
+		width: 23%;
+	    margin: 0 5%;
+	    display: inline-block;
+	    vertical-align: bottom;
+	}
+	&__img {
+		display: block;
+		margin: 0 auto 9px auto;
+	}
+	&__text {
+		line-height: 17px;
+		margin: 0;
+		span {
+			color: @yellow;
+		}
 	}
 }

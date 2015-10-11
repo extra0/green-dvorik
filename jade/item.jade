@@ -138,8 +138,183 @@ block content
 					h1.product__title Крупномеры или Glauca
 					.row
 						.product__image-block.col-lg-5
-							
+							.product__slider.slider-for._new
+								.product__slider-item-wrap
+									a.fancybox(href="img/content/slider_img.jpg" title="2" rel="img")
+										img(src="img/content/slider_img.jpg", alt="")
+								.product__slider-item-wrap
+									a.fancybox(href="img/content/slider_img.jpg" title="1" rel="img")
+										img(src="img/content/cart_product.jpg", alt="")
+								.product__slider-item-wrap
+									a.fancybox(href="img/content/slider_img.jpg" title="3" rel="img")
+										img(src="img/content/cart_product.jpg", alt="")
+								.product__slider-item-wrap
+									a.fancybox(href="img/content/slider_img.jpg" title="4" rel="img")
+										img(src="img/content/slider_img.jpg", alt="")
+							.product__thumbs.slider-nav
+								.product__slider-item-wrap
+									img(src="img/content/thumb.jpg", alt="")
+								.product__slider-item-wrap
+									img(src="img/content/cart_product.jpg", alt="")
+								.product__slider-item-wrap
+									img(src="img/content/cart_product.jpg", alt="")
+								.product__slider-item-wrap
+									img(src="img/content/thumb.jpg", alt="")
 						.product__description-block.col-lg-7
 							p.product__description-text Сорт ели колючей «Glauca» - карликовое хвойное дерево, по виду даже похожее больше на кустарник. В 10-ти летнем возрасте растения в высоту достигают примерно 2 метров, а крона в диаметре – 1,5. Хвоя чуть серповидная по форме, около 1 сантиметра в длину, блестящая и окрашена в бледно-голубой цвет. Годовой прирост невелик - всего до 8 сантиметров. Морозостойкость высокая.
 							p.product__description-text Колючая ель «Glauca» (Глаука) предпочитает хорошо освещённые места. Также предъявляет высокие требования к плодородию почвы. В земле должно содержать достаточно гумуса, иначе растение не будет должным образом развиваться. Требовательность к количеству влаги средняя. Сорт «Glauca» хорошо переносит обрезку, что позволяет легко сформировать требуемый тип кроны.
 							p.product__description-text Используется для выращивания в каменистых садах, одиночных и групповых посадках, а также для посадки в отдельные контейнеры. Хорошо растут в России в регионах Чернозёмья. Чтобы купить саженцы ели по хорошей цене, да ещё и отличного качества, следует обратиться в фирму «Зелёный дворик». Здесь продаются крупномеры, доставленные прямиком из Мичуринска, где, как известно, плохих растений просто не может быть в наличии.
+					.product__info-table-price-block
+						form(action="#" method="post")
+							table.product__info-price-table
+								tr
+									th.product__info-price-table-title Возраст/Размер
+										a.product__plant-age-info.fancybox(href="#")
+									th.product__info-price-table-title.text-center Цена без посадки
+									th.product__info-price-table-title
+								tr
+									td.product__info-plant-age 60-80 с25
+									td.product__info-plant-price 
+										span.product__info-plant-cost 9000
+										span.product__info-price-currency руб.
+									td.product__info-plant-quantity
+										span.cart-step__quantity-changer.glyphicon.glyphicon-minus
+										input.cart-step__quantity-input._product-quantity(type="text" value="1")
+										span.cart-step__quantity-changer.glyphicon.glyphicon-plus
+								tr
+									td.product__info-plant-age 60-80 с25
+									td.product__info-plant-price 
+										span.product__info-plant-cost 9000
+										span.product__info-price-currency руб.
+									td.product__info-plant-quantity
+										span.cart-step__quantity-changer.glyphicon.glyphicon-minus
+										input.cart-step__quantity-input._product-quantity(type="text" value="1")
+										span.cart-step__quantity-changer.glyphicon.glyphicon-plus
+								tr
+									td.product__info-plant-age 60-80 с25
+									td.product__info-plant-price 
+										span.product__info-plant-cost 9000
+										span.product__info-price-currency руб.
+									td.product__info-plant-quantity
+										span.cart-step__quantity-changer.glyphicon.glyphicon-minus
+										input.cart-step__quantity-input._product-quantity(type="text" value="1")
+										span.cart-step__quantity-changer.glyphicon.glyphicon-plus
+							.text-right
+								input.product__info-plant-submit(type="submit" value="Купить")
+					.attention__block
+						h2.attention__title Внимание! Для данного товара доступны:
+						ul.attention__list
+							li.attention__item
+								img.attention__img(src="img/logistic.png", alt="")
+								p.attention__text доставка
+							li.attention__item
+								img.attention__img(src="img/plant_mini.png", alt="")
+								p.attention__text посадка
+							li.attention__item
+								img.attention__img(src="img/g_plant_mini.png", alt="")
+								p.attention__text посадка и гарантия
+					.advantages__block
+						h3.advantages__title Почему мы?
+						ul.advantages__list
+							li.advantages__item
+								img.advantages__img(src="img/advant_1.png", alt="")
+								p.advantages__text Вы получаете <span>готовый плодоносящий сад-лес исключительной красоты,</span> габитуса и декоративности
+							li.advantages__item
+								img.advantages__img(src="img/advant_2.png", alt="")
+								p.advantages__text <span>Высочайшая прижи- ваемость материала</span> – из-за большого размера кома (ЗКС) и качества земли
+							li.advantages__item
+								img.advantages__img(src="img/advant_3.png", alt="")
+								p.advantages__text <span>Выгодная цена</span> – мы не посредники (прямая поставка из нашего питомника в Мичуринске)
+							li.advantages__item
+								img.advantages__img(src="img/advant_4.png", alt="")
+								p.advantages__text <span>Расширенная доп-гарантия</span> – доставка-замена-посадка нового дерева, если не прижилось
+							li.advantages__item
+								img.advantages__img(src="img/advant_5.png", alt="")
+								p.advantages__text Мы <span>работаем уже 14 лет,</span> накоплен огромный опыт и база растительных материалов
+					h2.product__title._marg-bottom Cмотрите также
+					.category-body__block
+						.row
+							.category-body__product-preview.col-lg-4
+								a.category-body__product-link(href="#")
+									h3.category-body__product-title ель picea abies
+									.category-body__box
+										img.category-body__product-img(src="img/content/product_img.png", alt="")
+										table.category-body__product-table
+											tr
+												td 60-80 c25									
+												td 
+													span.category-body__table-price 4500
+													|  руб
+											tr
+												td 60-80 c25
+												td 
+													span.category-body__table-price 6000
+													|  руб
+											tr
+												td 60-80 c25
+												td
+													span.category-body__table-price 6000
+													|  руб
+								.category-body__product-price-block
+									a.category-body__product-buy(href="#") Купить
+									p.category-body__product-price
+										| Цена от:
+										span.category-body__product-cost 4500
+										| руб.
+							.category-body__product-preview.col-lg-4
+								a.category-body__product-link(href="#")
+									h3.category-body__product-title ель glauca globosa
+									.category-body__box.new
+										img.category-body__product-img(src="img/content/product_img.png", alt="")
+										table.category-body__product-table
+											tr
+												td 60-80 c25									
+												td 
+													span.category-body__table-price 4500
+													|  руб.
+											tr
+												td 60-80 c25
+												td 
+													span.category-body__table-price 6000
+													|  руб.
+											tr
+												td 60-80 c25
+												td
+													span.category-body__table-price 6000
+													|  руб.
+								.category-body__product-price-block
+									a.category-body__product-buy(href="#") Купить
+									p.category-body__product-price
+										| Цена от:
+										span.category-body__product-cost 4500
+										| руб.
+							.category-body__product-preview.col-lg-4
+								a.category-body__product-link(href="#")
+									h3.category-body__product-title ель сербская европейская порода
+									.category-body__box.new
+										img.category-body__product-img(src="img/content/product_img.png", alt="")
+										table.category-body__product-table
+											tr
+												td 60-80 c25									
+												td 
+													span.category-body__table-price 4500
+													|  руб
+											tr
+												td 60-80 c25
+												td 
+													span.category-body__table-price 6000
+													|  руб
+											tr
+												td 60-80 c25
+												td
+													span.category-body__table-price 6000
+													|  руб
+								.category-body__product-price-block
+									a.category-body__product-buy(href="#") Купить
+									p.category-body__product-price
+										| Цена от:
+										span.category-body__product-cost 4500
+										| руб.
+					.category__advice-block
+							h3.category__advice-title Советы
+							p.category__intro-text Своими руками строительство и дренаж альпийской горки удобно проводить с помощью щебня, гравия, а также измельченного кирпича, опилок и других остатков ремонтных работ. Все это засыпают в углубление в земле для будущего альпинария. Такой слой на дне предотвращает оседание почв и помогает поддержать оптимальный уровень влажности.
