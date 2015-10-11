@@ -8,4 +8,6 @@ $(function(){
 		$(this).next().slideToggle(500);
 	});
 
+	// слайдер в продукте
+	
 });
