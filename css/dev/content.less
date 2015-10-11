@@ -903,6 +903,51 @@
 	&__info-table-price-block {
 		margin-bottom: 33px;
 	}
+	&__modal-window {
+		/* модальное окно возраста растений */
+		width: 790px;
+		display: none;
+		border-radius: @radius;
+		background: #fff;
+	}
+	&__modal-title {
+		margin: 0 0 27px 0;
+		color: #fff;
+		.gradient-green;
+		padding: 11px 19px;
+		font-size: 18px;
+		font-family: @gothic;
+		border-radius: 8px 8px 0 0;
+	}
+	&__modal-table-wrap {
+		padding: 0 19px 27px 19px;
+	}
+	&__modal-table {
+		width: 100%;
+
+		tr {
+			border-bottom: 1px solid #cccccc;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		td {
+			padding: 6px 0 7px 0;
+		}
+	}
+	&__modal-age {
+		font-family: Tahoma;
+		font-size: 16px;
+		width: 20.7%;
+		color: @dark-green;
+		font-weight: bold;
+	}
+	&__modal-text {
+		font-size: 16px;
+		color: #5c5c5c;
+		margin: 0;
+		font-family: Tahoma;
+	}
 }
 /* блок внимания в продукте */
 .attention {
