@@ -1928,9 +1928,6 @@ textarea {
 .main__text-block p {
   font-size: 12px;
 }
-.main__text-block strong {
-  color: #ffe401;
-}
 .main__text-block a {
   text-decoration: underline;
 }
@@ -1949,7 +1946,8 @@ textarea {
 }
 .main__download-price {
   position: relative;
-  margin: 15px 0 0 36px;
+  font-size: 12px;
+  margin: 20px 0 10px 36px;
   text-decoration: underline;
   display: inline-block;
 }
