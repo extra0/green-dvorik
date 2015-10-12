@@ -892,6 +892,13 @@ textarea {
   padding: 15px 15px 0 15px;
   line-height: 17px;
 }
+.category__intro-text a {
+  text-decoration: underline;
+}
+.category__intro-text a:hover {
+  text-decoration: none;
+  color: #00ff00;
+}
 .category-body__block {
   padding: 15px;
   vertical-align: top;
@@ -1920,6 +1927,22 @@ textarea {
 .main__text-block strong {
   color: #ffe401;
 }
+.main__text-block a {
+  text-decoration: underline;
+}
+.main__text-block a:hover {
+  text-decoration: none;
+  color: #00ff00;
+}
+.main__text-block blockquote {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px 35px;
+  font-size: 12px;
+  font-family: Tahoma;
+  box-sizing: border-box;
+  background: #121212;
+}
 .main__download-price {
   position: relative;
   margin: 15px 0 0 36px;
@@ -1939,7 +1962,94 @@ textarea {
   top: -9px;
   left: -36px;
 }
+.main__map {
+  height: 450px;
+  margin-bottom: 15px;
+}
+.main__form-block {
+  max-width: 450px;
+}
+.main__form-control {
+  position: relative;
+}
+.main__form-control span {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #838383;
+}
+.main__form-textarea,
+.main__form-input {
+  width: 100%;
+  font-family: Tahoma, Arial;
+  height: 30px;
+  margin-bottom: 7px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #00ff00;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.main__form-textarea:focus,
+.main__form-input:focus {
+  box-shadow: 0 0 8px #00ff00;
+}
+.main__form-textarea {
+  height: 80px;
+  padding: 5px 30px;
+  resize: none;
+}
+.main__form-submit {
+  background: #2e572e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e572e), color-stop(26%, #264f26), color-stop(76%, #0e370e), color-stop(100%, #073007));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e572e', endColorstr='#073007', GradientType=0);
+  /* IE6-9 */
+  border: none;
+  padding: 5px 15px;
+}
+.main__form-submit:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#073007+0,0e370e+24,264f26+74,2e572e+100 */
+  background: #073007;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #073007), color-stop(24%, #0e370e), color-stop(74%, #264f26), color-stop(100%, #2e572e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#073007', endColorstr='#2e572e', GradientType=0);
+  /* IE6-9 */
+}
 /* Заголовки */
+.title {
+  color: #ffe401;
+  font-size: 28px;
+  font-family: 'Century Gothic';
+}
 .subtitle {
   font-size: 18px;
   color: #ffe401;

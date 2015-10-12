@@ -199,6 +199,13 @@
 		margin: 0;
 		padding: 15px 15px 0 15px;
 		line-height: 17px;
+		a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+				color: @green;
+			}
+		}
 	}
 	&-body {
 		&__block {
@@ -1084,6 +1091,22 @@
 		strong {
 			color: @yellow;
 		}
+		a {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+				color: @green;
+			}
+		}
+		blockquote {
+			border: 1px solid #333;
+			border-radius: @radius;
+			padding: 15px 35px;
+			font-size: 12px;
+			font-family: Tahoma;
+			box-sizing: border-box;
+		    background: #121212;
+		}
 	}
 	&__download-price {
 		position: relative;
@@ -1104,10 +1127,62 @@
 			left: -36px;
 		}
 	}
+	&__map {
+		height: 450px;
+		margin-bottom: 15px;
+	}
+	&__form-block {
+		max-width: 450px;
+	}
+	&__form-control {
+		position: relative;
+		span {
+			position: absolute;
+			top: 8px;
+			left: 10px;
+			color: #838383;
+		}
+	}
+	&__form-textarea,
+	&__form-input {
+		width: 100%;
+		font-family: Tahoma, Arial;
+		height: 30px;
+		margin-bottom: 7px;
+		background: #fff;
+		color: #000;
+		border: 1px solid @green;
+		border-radius: @radius;
+		box-sizing: border-box;
+		padding: 0 30px;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:focus {
+			box-shadow: 0 0 8px @green;
+		}
+	}
+	&__form-textarea {
+		height: 80px;
+		padding: 5px 30px;
+		resize: none;
+	}
+	&__form-submit {
+		.gradient-green;
+		border: none;
+		padding: 5px 15px;
+		&:hover {
+			.hover-gradient;
+		}
+	}
 }
 /* Заголовки */
 .title {
-
+	color: @yellow;
+	font-size: 28px;
+	font-family: @gothic;
 }
 .subtitle {
 	font-size: 18px;
