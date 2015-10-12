@@ -26,4 +26,23 @@ $(function() {
 		centerMode: false,
 		focusOnSelect: true
 	});
+
+	// главный слайдер
+	$('.main-slider__block').slick({
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		cssEase: 'ease',
+		arrows: false
+	});
+
+	// слайдер товара на главной 
+	$('.main-product-slider__block').slick({
+		dots: false,
+		slidesToShow: 3,
+		cssEase: 'ease',
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 3000
+	});
 });

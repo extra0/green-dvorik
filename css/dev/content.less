@@ -95,7 +95,7 @@
 /* хлебные крошки */
 .breadcrumbs {
 	&__block {
-		margin: 15px 0 24px 18px;
+		margin: 0px 0 24px 18px;
 	}
 	&__list {
 		padding: 0;
@@ -1044,4 +1044,74 @@
 			color: @yellow;
 		}
 	}
+}
+/* главный контент на страницах */
+.main {
+	&-slider {
+		&__item {
+			border: 1px solid #fff;
+		}
+		&__block {
+			margin-bottom: 30px;
+			.slick-dots {
+				text-align: right;
+				bottom: 5px;
+				right: 10px;
+			}
+		}
+	}
+	&__text-block {
+		font-family: Tahoma;
+		ul {
+			list-style-image: url(../img/list-type-yellow.png);
+			padding: 0 0 0 15px;
+			margin: 15px 0;
+			li {
+				font-size: 12px;
+				padding-left: 5px;
+				margin-bottom: 7px;
+			}
+		}
+		h3 {
+			font-size: 14px;
+			font-family: @gothic;
+			margin: 0 0 10px 0;
+			color: @yellow;
+		}
+		p {
+			font-size: 12px;
+		}
+		strong {
+			color: @yellow;
+		}
+	}
+	&__download-price {
+		position: relative;
+		margin: 15px 0 0 36px;
+		text-decoration: underline;
+		display: inline-block;
+		&:hover {
+			color: @green;
+			text-decoration: none;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../img/price.png) 0 0 no-repeat;
+			width: 28px;
+			height: 30px;
+			top: -9px;
+			left: -36px;
+		}
+	}
+}
+/* Заголовки */
+.title {
+
+}
+.subtitle {
+	font-size: 18px;
+	color: @yellow;
+	font-family: @gothic;
+	margin: 0 0 10px 0;
 }
