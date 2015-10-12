@@ -2112,6 +2112,48 @@ textarea {
   font-size: 12px;
   margin: 0;
 }
+/* фотогаллерея */
+.gallery__category-block {
+  margin: 15px 0;
+}
+.gallery__category-link {
+  font-size: 18px;
+  font-family: 'Century Gothic';
+  display: inline-block;
+  margin: 0 15px 0 0;
+  text-decoration: underline;
+}
+.gallery__category-link:hover {
+  text-decoration: none;
+  color: #00ff00;
+}
+.gallery__block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery__img-link {
+  display: inline-block;
+  margin: 0 0 25px 0;
+}
+.gallery__img {
+  max-width: 150px;
+  max-height: 113px;
+  display: block;
+  margin: auto;
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+.gallery__img:hover {
+  opacity: 0.8;
+}
 .footer {
   margin-top: 44px;
   padding: 0 0 45px 0;

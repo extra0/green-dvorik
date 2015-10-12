@@ -1252,3 +1252,48 @@
 		margin: 0;
 	}
 }
+/* фотогаллерея */
+.gallery {
+	&__section {}
+	&__category-block {
+		margin: 15px 0;
+	}
+	&__category-link {
+		font-size: 18px;
+		font-family: @gothic;
+		display: inline-block;
+		margin: 0 15px 0 0;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			color: @green;
+		}
+	}
+	&__block {
+		display: -webkit-box; 
+		display: -moz-box;   
+		display: -ms-flexbox; 
+		display: -webkit-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	&__img-link {
+		display: inline-block;
+		margin: 0 0 25px 0;
+	}
+	&__img {
+		max-width: 150px;
+		max-height: 113px;
+		display: block;
+		margin: auto;
+		-webkit-transition: opacity 0.4s ease;
+		-moz-transition: opacity 0.4s ease;
+		-ms-transition: opacity 0.4s ease;
+		-o-transition: opacity 0.4s ease;
+		transition: opacity 0.4s ease;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
