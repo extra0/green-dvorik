@@ -199,6 +199,7 @@
 		margin: 0;
 		padding: 15px 15px 0 15px;
 		line-height: 17px;
+		font-family: Tahoma, Arial;
 		a {
 			text-decoration: underline;
 			&:hover {
@@ -1210,5 +1211,44 @@
 			color: @green;
 			text-decoration: none;
 		}
+	}
+}
+/* слайдер выставочной площадки*/
+.visual-area {
+	&__block {
+		div {
+			outline: none;
+			border: none;
+		}
+		.slick-prev {
+			left: -20px;
+		}
+        .slick-next {
+			right: -20px;
+        }
+	}
+	&__img {
+		padding: 15px;
+	}
+}
+/* блок о земле на странцие о компании */
+.land {
+	&__block {
+		margin: 15px 0;
+	}
+	&__img {
+		float: left;
+		margin: 0 20px 10px 0;
+	}
+	&__title {
+		color: @yellow;
+		font-size: 14px;
+		margin: 0 0 10px 0;
+		font-family: Tahoma;
+		font-weight: bold;
+	}
+	&__text {
+		font-size: 12px;
+		margin: 0;
 	}
 }

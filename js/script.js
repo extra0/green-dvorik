@@ -36,8 +36,8 @@ $(function() {
 		arrows: false
 	});
 
-	// слайдер товара на главной 
-	$('.main-product-slider__block').slick({
+	// универсальный слайдер
+	$('.universal-slider').slick({
 		dots: false,
 		slidesToShow: 3,
 		cssEase: 'ease',

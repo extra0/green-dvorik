@@ -420,11 +420,13 @@ textarea {
 }
 .slick-prev {
   left: -40px;
-  top: 32px;
 }
 .slick-next {
   right: -40px;
   background-position: -33px 0px;
+}
+.slider-nav .slick-prev,
+.slider-nav .slick-next {
   top: 32px;
 }
 /* Dots */
@@ -891,6 +893,7 @@ textarea {
   margin: 0;
   padding: 15px 15px 0 15px;
   line-height: 17px;
+  font-family: Tahoma, Arial;
 }
 .category__intro-text a {
   text-decoration: underline;
@@ -2075,6 +2078,39 @@ textarea {
 .faq__link:hover {
   color: #00ff00;
   text-decoration: none;
+}
+/* слайдер выставочной площадки*/
+.visual-area__block div {
+  outline: none;
+  border: none;
+}
+.visual-area__block .slick-prev {
+  left: -20px;
+}
+.visual-area__block .slick-next {
+  right: -20px;
+}
+.visual-area__img {
+  padding: 15px;
+}
+/* блок о земле на странцие о компании */
+.land__block {
+  margin: 15px 0;
+}
+.land__img {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+.land__title {
+  color: #ffe401;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+.land__text {
+  font-size: 12px;
+  margin: 0;
 }
 .footer {
   margin-top: 44px;
