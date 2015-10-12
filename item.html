@@ -12,6 +12,17 @@
     <title></title>
   </head>
   <body>
+    <div id="enter" class="modal__window">
+      <h2 class="modal__title">Авторизация</h2>
+      <form action="#" method="post">
+        <label for="user_name" class="modal__label">Логин</label>
+        <input id="user_name" type="text" required class="modal__input">
+        <label for="user_pass" class="modal__label">Пароль</label>
+        <input id="user_pass" type="password" required class="modal__input">
+        <input type="checkbox"><span class="modal__checkbox-text">Запомнить меня</span><a href="#" class="modal__remember-link pull-right">Забыли пароль?</a>
+        <input type="submit" value="Войти" class="modal__submit">
+      </form>
+    </div>
     <div class="main-wrapper">
       <header class="header">
         <div class="container">
@@ -36,7 +47,7 @@
                     <form action="#" method="post" class="header__user-info-form">
                       <input type="text" required placeholder="Поиск по сайту" class="header__user-info-input">
                       <input type="submit" value="" class="header__user-info-submit">
-                    </form><a href="#" class="header__user-enter">Вход по паролю<span class="header__user-icon-enter glyphicon glyphicon-user"></span></a><br><a href="#" class="header__user-cart"> <span class="header__user-icon-cart glyphicon glyphicon-shopping-cart"></span><span class="header__user-cart-quantity">5 </span>товаров на сумму <span class="header__user-cart-total-price">5000</span></a>
+                    </form><a href="#enter" class="header__user-enter fancybox">Вход по паролю<span class="header__user-icon-enter glyphicon glyphicon-user"></span></a><br><a href="#" class="header__user-cart"> <span class="header__user-icon-cart glyphicon glyphicon-shopping-cart"></span><span class="header__user-cart-quantity">5 </span>товаров на сумму <span class="header__user-cart-total-price">5000</span></a>
                   </div>
                 </div>
                 <div class="banner__block col-lg-12"><a href="#"><img src="img/content/header-banner.jpg" alt="" class="banner__img"></a></div>

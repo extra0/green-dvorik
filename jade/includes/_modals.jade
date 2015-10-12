@@ -1,0 +1,11 @@
+.modal__window#enter
+	h2.modal__title Авторизация
+	form(action="#" method="post")
+		label.modal__label(for="user_name") Логин
+		input.modal__input#user_name(type="text" required)
+		label.modal__label(for="user_pass") Пароль
+		input.modal__input#user_pass(type="password" required)
+		input(type="checkbox")
+		span.modal__checkbox-text Запомнить меня
+		a.modal__remember-link.pull-right(href="#") Забыли пароль?
+		input.modal__submit(type="submit" value="Войти")

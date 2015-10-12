@@ -131,63 +131,35 @@ block content
 						li.breadcrumbs__item
 							a.breadcrumbs__link(href="#") Главная
 						li.breadcrumbs__item
-							span.breadcrumbs__current-link Контакты
-				.main-slider__block
-					.main-slider__item
-						img(src="img/content/greendvor_1.jpg", alt="")
-					.main-slider__item
-						img(src="img/content/greendvor_1.jpg", alt="")
-					.main-slider__item
-						img(src="img/content/greendvor_1.jpg", alt="")
-					.main-slider__item
-						img(src="img/content/greendvor_1.jpg", alt="")
-				h1.title Контакты
+							span.breadcrumbs__current-link Регистрация
 				.main__text-block
-					br
-					h2.subtitle Телефоны
-					h3 
-						strong Москва
-					p 8-925-881-01-90
-					p 8-916-426-69-88
-					p 8-916-241-25-79
-					h3 
-						strong Мичуринск
-					p 8-916-636-85-28
-					br
-					h3 
-						strong Email
-					p
-						a(href="mailto:green-dvori@yandex.ru") green-dvori@yandex.ru
-					p
-						a.fancybox(href="img/dogovor-uchastok.jpg.jpg")
-							img(src="img/dogovor-uchastok_s.jpg", alt="")
-					br
-					h2.subtitle Реквизиты:
-					p ИП Кривошеева Валентина Анатольевна 
-					p ИНН 682700690777 
-					p ОГРНИП 311682721500064
-					p Р/С №40802810300990024315
-					br
-					h2.subtitle Адрес:
-					p г. Москва, 96-ой км МКАД (450 метров), Лесная зона в микрорайоне Дружба
-					h2.subtitle Как проехать:
-					p Свернуть с МКАД на Ярославское шоссе в сторону области, через 300 метров повернуть направо, на ул. Карла Либнехта, затем на Октябрьскую улицу. В конце ее, на развилке, свернуть направо - до упора, затем налево, на Кропоткинский проезд, далее въезд на территорию садового центра.
-					.main__map
-						<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-hH0fK216AGav8dWAt4L0LXdd4e0jy4e&width=100%&height=100%&lang=ru_UA&sourceType=constructor"></script>
-					blockquote Внимание! Имя нашей компании стало использоваться недобросовестными продавцами посадочного материала. Предупреждаем, что мы не имеем к ним никакого отношения и работаем только по контактам, указанным на нашем сайте!
-					p Чтобы связаться с нами заполните эту форму:
-					.main__form-block
-						form(action="#" method="post")
-							.main__form-control
-								span.glyphicon.glyphicon-user
-								input.main__form-input(type="text" required placeholder="Ваше имя")
-							.main__form-control
-								span.glyphicon.glyphicon-envelope
-								input.main__form-input(type="email" required placeholder="Ваш email")
-							.main__form-control
-								span.glyphicon.glyphicon-pencil
-								textarea.main__form-textarea( placeholder="Ваш вопрос (комментарий)")
-							input.main__form-submit(type="submit" value="Отправить")
-				.category__advice-block
-					h3.category__advice-title Советы
-					p.category__intro-text Выбирая крупномер, ориентируйтесь не только на свой вкус, но и на возможности сада. Походите по окружающей местности, посмотрите, какие растения в ней лучше приживаются, поспрашивайте соседей. Но, главное, прислушивайтесь к <a href="#">мнению профессионалов!</a> У нас продажа мичуринских крупномеров всегда сопровождается консультацией грамотных специалистов.
+					h1.title Регистрация
+					form(action="#" method="post")
+						.row
+							.col-lg-6
+								label.modal__label Имя
+								input.modal__input(type="text")
+								label.modal__label Фамилия
+								input.modal__input(type="text")
+								label.modal__label * Логин (мин. 3 символа):
+								input.modal__input(type="text")
+								label.modal__label * Пароль:
+								input.modal__input(type="password")
+								label.modal__label * Подтверждение пароля:
+								input.modal__input(type="password")
+								label.modal__label * E-Mail:
+								input.modal__input(type="email")
+								p * Обязательны для заполнения
+						input.modal__submit(type="submit" value="Регистрация")
+						br
+						a.modal__remember-link(href="#enter") Авторизация
+						br
+						br
+						br
+					.main__text-block
+						h3 Соглашение об обработке персональных данных
+						p Данное соглашение об обработке персональных данных составлено в соответствии с законодательством Российской Федерации.
+						p Все лица подающие сведения через форму на данном сайте, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу ИП Кривошеева Валентина Анатольевна (ИНН 682700690777).
+						p Персональные данные Пользователя, переданные через данный сайт не предназначаются для передачи третьим лицам и могут быть использованы только для коммуникаций с ИП Кривошеева Валентина Анатольевна. Под персональными данными Пользователя понимается: общая информация (Имя, адрес электронной почты, номер телефона и другие контактные данные); посетители сайта направляют свои персональные данные для возможности последующей связи с ними.
+						p Пользователи, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, уничтожение.
+						p Пользователь гарантирует: информация, им предоставленная, является точной и достоверной; при предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданина в отношении себя лично.
