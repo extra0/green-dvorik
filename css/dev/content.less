@@ -1132,6 +1132,10 @@
 		height: 450px;
 		margin-bottom: 15px;
 	}
+	&__mini-map {
+		height: 250px;
+		margin: 10px 0 50px 0;
+	}
 	&__form-block {
 		max-width: 450px;
 	}
@@ -1213,18 +1217,24 @@
 		}
 	}
 }
+/* универсальный слайдер */
+.universal-slider {
+	.category-body__product-preview {
+		margin: 0 8px;
+	}
+}
+
 /* слайдер выставочной площадки*/
 .visual-area {
 	&__block {
-		div {
-			outline: none;
-			border: none;
-		}
+		padding: 0 35px;
+		background-color: rgba(43, 40, 40, 0.5);
+		border-radius: @radius;
 		.slick-prev {
-			left: -20px;
+			left: 12px;
 		}
         .slick-next {
-			right: -20px;
+			right: 8px;
         }
 	}
 	&__img {
@@ -1234,7 +1244,7 @@
 /* блок о земле на странцие о компании */
 .land {
 	&__block {
-		margin: 15px 0;
+		margin: 0 0 15px 0;
 	}
 	&__img {
 		float: left;

@@ -360,6 +360,7 @@ textarea {
 .slick-slide img {
   display: block;
   margin: auto;
+  outline: none;
 }
 .slick-slide.slick-loading img {
   display: none;
@@ -1969,6 +1970,10 @@ textarea {
   height: 450px;
   margin-bottom: 15px;
 }
+.main__mini-map {
+  height: 250px;
+  margin: 10px 0 50px 0;
+}
 .main__form-block {
   max-width: 450px;
 }
@@ -2079,23 +2084,28 @@ textarea {
   color: #00ff00;
   text-decoration: none;
 }
+/* универсальный слайдер */
+.universal-slider .category-body__product-preview {
+  margin: 0 8px;
+}
 /* слайдер выставочной площадки*/
-.visual-area__block div {
-  outline: none;
-  border: none;
+.visual-area__block {
+  padding: 0 35px;
+  background-color: rgba(43, 40, 40, 0.5);
+  border-radius: 10px;
 }
 .visual-area__block .slick-prev {
-  left: -20px;
+  left: 12px;
 }
 .visual-area__block .slick-next {
-  right: -20px;
+  right: 8px;
 }
 .visual-area__img {
   padding: 15px;
 }
 /* блок о земле на странцие о компании */
 .land__block {
-  margin: 15px 0;
+  margin: 0 0 15px 0;
 }
 .land__img {
   float: left;
