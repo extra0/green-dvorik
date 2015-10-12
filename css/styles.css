@@ -2056,6 +2056,26 @@ textarea {
   font-family: 'Century Gothic';
   margin: 0 0 10px 0;
 }
+/* блок  с вопросами и ответами*/
+.faq__block {
+  font-family: Tahoma, Arial;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.faq__title {
+  font-weight: bold;
+  margin: 0;
+}
+.faq__text {
+  margin: 0;
+}
+.faq__link {
+  text-decoration: underline;
+}
+.faq__link:hover {
+  color: #00ff00;
+  text-decoration: none;
+}
 .footer {
   margin-top: 44px;
   padding: 0 0 45px 0;
