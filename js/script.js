@@ -55,16 +55,22 @@ $(function() {
 	});
 
 	// проставляем индексы в ссылках для плавной прокрутки
-	$('.anchor__link').each(function(i){$(this).attr('data-index', i);});
+	$('.anchor__link').each(function(i){$(this).attr('href', '#' + i);});
+	$('h2.subtitle').each(function(i){$(this).attr('id', i);});
 
 	// плавное перемещение к нужной колонке в ценах
 	$(document).ready(function() {
 		$('.anchor__link').bind("click", function(e) {
 			var anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top
+				scrollTop: $(anchor.attr('href')).offset().top - 20
 			}, 1500);
 			e.preventDefault();
 		});
+	});
+
+	// открываем полный список таблиц на мобле
+	$('.main__show-table').click(function(){
+		$('.main__table-wrapper').fadeToggle(500);
 	});
 });

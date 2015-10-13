@@ -2098,8 +2098,99 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#073007', endColorstr='#2e572e', GradientType=0);
   /* IE6-9 */
 }
-.main__table-wrap {
+.main__table-price-wrap {
   overflow-x: auto;
+  margin-bottom: 30px;
+}
+.main__table-price-head {
+  background: #2e572e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e572e), color-stop(26%, #264f26), color-stop(76%, #0e370e), color-stop(100%, #073007));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e572e', endColorstr='#073007', GradientType=0);
+  /* IE6-9 */
+}
+.main__table-price-head th {
+  text-align: center;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+.main__table-price {
+  border: 1px solid #2e572e;
+  text-align: center;
+  width: 100%;
+}
+.main__table-price td {
+  border: 1px solid #2e572e;
+  padding: 2px 5px;
+  box-sizing: border-box;
+}
+.main__table-price td:first-child {
+  width: 50%;
+  color: #98fe9a;
+  text-align: left;
+}
+.main__table-price-name {
+  color: #fff!important;
+}
+.main__table-wrapper {
+  display: block;
+}
+.main__show-table {
+  color: #fff;
+  display: none!important;
+  text-decoration: none!important;
+  display: inline-block;
+  padding: 5px 25px;
+  background: #2e572e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e572e), color-stop(26%, #264f26), color-stop(76%, #0e370e), color-stop(100%, #073007));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e572e', endColorstr='#073007', GradientType=0);
+  /* IE6-9 */
+}
+.main__show-table:focus,
+.main__show-table:active,
+.main__show-table:hover {
+  color: #fff!important;
+  text-decoration: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#073007+0,0e370e+24,264f26+74,2e572e+100 */
+  background: #073007;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #073007), color-stop(24%, #0e370e), color-stop(74%, #264f26), color-stop(100%, #2e572e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #073007 0%, #0e370e 24%, #264f26 74%, #2e572e 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#073007', endColorstr='#2e572e', GradientType=0);
+  /* IE6-9 */
 }
 /* Заголовки */
 .title {
@@ -2509,6 +2600,12 @@ textarea {
   }
   .category-body__product-table td {
     font-size: 14px;
+  }
+  .main__table-wrapper {
+    display: none;
+  }
+  .main__show-table {
+    display: inline-block !important;
   }
 }
 @media (min-width: 500px) and (max-width: 768px) {

@@ -1173,8 +1173,54 @@
 			.hover-gradient;
 		}
 	}
-	&__table-wrap {
+	&__table-price-wrap {
 		overflow-x: auto;
+		margin-bottom: 30px;
+	}
+	&__table-price-head {
+		.gradient-green;
+		th {
+			text-align: center;
+			padding: 2px 5px;
+			font-size: 12px;
+		}
+	}
+	&__table-price {
+		border: 1px solid @dark-green;
+		text-align: center;
+		width: 100%;
+		td {
+			border: 1px solid @dark-green;
+			padding: 2px 5px;
+			box-sizing: border-box;
+			&:first-child {
+				width: 50%;
+				color: @light-green;
+				text-align: left;
+			}
+			
+		}
+	}
+	&__table-price-name {
+		color: #fff!important;
+	}
+	&__table-wrapper {
+		display: block;
+	}
+	&__show-table {
+		color: #fff;
+		display: none!important;
+		text-decoration: none!important;
+		display: inline-block;
+		padding: 5px 25px;
+		.gradient-green;
+		&:focus,
+		&:active,
+		&:hover {
+			color: #fff!important;
+			text-decoration: none;
+			.hover-gradient;
+		}
 	}
 }
 /* Заголовки */
