@@ -1173,6 +1173,9 @@
 			.hover-gradient;
 		}
 	}
+	&__table-wrap {
+		overflow-x: auto;
+	}
 }
 /* Заголовки */
 .title {
@@ -1367,5 +1370,61 @@
 	&__text {
 		display: inline-block;
 		margin: 5px 0 0 0;
+	}
+}
+/* css для информации о заказах в личном кабинете */
+.order {
+	&__table-wrap {
+		margin-bottom: 50px;
+	}
+	&__table {
+		margin-bottom: 20px;
+		width: 100%;
+		tbody {
+			padding: 10px 0 0 0;
+		}
+		thead {
+			.gradient-green;
+			th {
+				color: @yellow;
+				padding: 5px 10px;
+			}
+		}
+		td {
+			vertical-align: top;
+			padding: 15px 10px 5px 10px;
+			&:first-child {
+				width: 60%;
+			}
+		}
+	}
+	&__table-line {
+		margin-bottom: 7px;
+	}
+	&__status {
+		font-family: @gothic;
+		margin: 5px 0;
+		display: inline-block;
+		font-size: 14px!important;
+		font-weight: bold;
+		padding: 3px 15px;
+		text-transform: uppercase; 
+		&._pay {
+			background: @dark-green;
+		}
+		&._not-pay {
+			background: #822602;
+		}
+	}
+	&__list {
+		margin-top: 15px;
+		li {
+			margin-bottom: 5px;
+		}
+	}
+	&__link {
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
 	}
 }

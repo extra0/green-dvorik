@@ -2098,6 +2098,9 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#073007', endColorstr='#2e572e', GradientType=0);
   /* IE6-9 */
 }
+.main__table-wrap {
+  overflow-x: auto;
+}
 /* Заголовки */
 .title {
   color: #ffe401;
@@ -2309,6 +2312,75 @@ textarea {
 .modal__text {
   display: inline-block;
   margin: 5px 0 0 0;
+}
+/* css для информации о заказах в личном кабинете */
+.order__table-wrap {
+  margin-bottom: 50px;
+}
+.order__table {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.order__table tbody {
+  padding: 10px 0 0 0;
+}
+.order__table thead {
+  background: #2e572e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e572e), color-stop(26%, #264f26), color-stop(76%, #0e370e), color-stop(100%, #073007));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2e572e 0%, #264f26 26%, #0e370e 76%, #073007 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e572e', endColorstr='#073007', GradientType=0);
+  /* IE6-9 */
+}
+.order__table thead th {
+  color: #ffe401;
+  padding: 5px 10px;
+}
+.order__table td {
+  vertical-align: top;
+  padding: 15px 10px 5px 10px;
+}
+.order__table td:first-child {
+  width: 60%;
+}
+.order__table-line {
+  margin-bottom: 7px;
+}
+.order__status {
+  font-family: 'Century Gothic';
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 14px!important;
+  font-weight: bold;
+  padding: 3px 15px;
+  text-transform: uppercase;
+}
+.order__status._pay {
+  background: #2e572e;
+}
+.order__status._not-pay {
+  background: #822602;
+}
+.order__list {
+  margin-top: 15px;
+}
+.order__list li {
+  margin-bottom: 5px;
+}
+.order__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
 }
 .footer {
   margin-top: 44px;

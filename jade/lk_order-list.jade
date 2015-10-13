@@ -1,0 +1,136 @@
+extends _layout
+block content
+	.container
+		.row
+			include includes/_main-sidebar
+			// контент
+			.main-content.col-md-9
+				.breadcrumbs__block
+					ul.breadcrumbs__list
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Мои кабинет
+						li.breadcrumbs__item
+							span.breadcrumbs__current-link Мой заказы
+				.main__text-block
+					h2.title Заказы в статусе "Принят, ожидает обработки"
+					p Заказ принят, но пока не обрабатывается. На обработку вашего заказа может понадобится до 3-х дней. Не волнуйтесь, наши сотрудники обязательно свяжутся с Вами. Спасибо за понимание.
+					.order__table-wrap
+						table.order__table
+							thead
+								tr
+									th(colspan="2") Заказ №7876	от 24.09.2015
+							tbody
+								tr
+									td
+										.order__table-line
+											strong Сумма к оплате: 
+											| 1292 руб.
+										.order__table-line
+											strong Оплачен: 
+											| Нет
+										.order__table-line
+											strong Способ оплаты: 
+											| Банковская карта
+										.order__table-line
+											strong Доставка: 
+											| Доставка курьером (по Москве)
+										.order__table-line
+											strong Состав заказа:
+											ol.order__list
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+									td
+										| 29.02.2015
+										p.order__status._not-pay Принят, ожидает обработки
+										.order__table-line
+											a.order__link(href="#") Отменить заказ
+										.order__table-line
+											a.order__link(href="#") Повторить заказ
+						table.order__table
+							thead
+								tr
+									th(colspan="2") Заказ №7876	от 24.09.2015
+							tbody
+								tr
+									td
+										.order__table-line
+											strong Сумма к оплате: 
+											| 1292 руб.
+										.order__table-line
+											strong Оплачен: 
+											| Нет
+										.order__table-line
+											strong Способ оплаты: 
+											| Банковская карта
+										.order__table-line
+											strong Доставка: 
+											| Доставка курьером (по Москве)
+										.order__table-line
+											strong Состав заказа:
+											ol.order__list
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+									td
+										| 29.02.2015
+										p.order__status._not-pay Принят, ожидает обработки
+										.order__table-line
+											a.order__link(href="#") Отменить заказ
+										.order__table-line
+											a.order__link(href="#") Повторить заказ
+					h2.title Заказы в статусе "Оплачен, ожидает обработки"
+					p Заказ оплачен, но пока не обрабатывается. На обработку вашего заказа может понадобится до 3-х дней. Не волнуйтесь, Ваш заказ обязательно будет обработан. Спасибо за понимание.
+					.order__table-wrap
+						table.order__table
+							thead
+								tr
+									th(colspan="2") Заказ №7876	от 24.09.2015
+							tbody
+								tr
+									td
+										.order__table-line
+											strong Сумма к оплате: 
+											| 1292 руб.
+										.order__table-line
+											strong Оплачен: 
+											| Да
+										.order__table-line
+											strong Способ оплаты: 
+											| Банковская карта
+										.order__table-line
+											strong Доставка: 
+											| Доставка курьером (по Москве)
+										.order__table-line
+											strong Состав заказа:
+											ol.order__list
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+												li
+													a(href="#") Алыча красная прекрасная
+													| - 1 шт.
+									td
+										| 29.02.2015
+										p.order__status._pay Оплачен, ожидает обработки
+										.order__table-line
+											a.order__link(href="#") Отменить заказ
+										.order__table-line
+											a.order__link(href="#") Повторить заказ
