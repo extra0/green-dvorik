@@ -1,6 +1,6 @@
 /* сайтбар */
 .right-sidebar {
-	margin: -35px 0 0 0;
+	margin: -50px 0 0 0;
 	&-inner {
 		border-radius: @radius;
 		border: 1px solid @dark-green;
@@ -246,6 +246,7 @@
 		&__box {
 			position: relative;
 			overflow: hidden;
+			border: 1px solid #fff;
 			margin-bottom: 16px;
 			&.new {
 				&:before {
@@ -260,20 +261,12 @@
 				}
 			}
 		}
-		&__product-img {
-			padding: 1px;
-			box-sizing: border-box;
-			background: #fff;
-		}
 		&__product-table {
 			-webkit-transition: all 0.4s ease;
 			-moz-transition: all 0.4s ease;
 			-ms-transition: all 0.4s ease;
 			-o-transition: all 0.4s ease;
 			transition: all 0.4s ease;
-			border-left: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-			border-right: 1px solid #fff;
 			z-index: 3;
 			position: absolute;
 			bottom: -200px;
@@ -1311,7 +1304,7 @@
 		display: none;
 		background: #000;
 		border: 1px solid #ccc;
-		width: 310px;
+		max-width: 310px;
 		padding: 15px 20px;
 		box-sizing: border-box;
 		border-radius: @radius;

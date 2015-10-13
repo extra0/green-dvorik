@@ -1,3 +1,4 @@
+// окно авторизации
 .modal__window#enter
 	h2.modal__title Авторизация
 	form(action="#" method="post")
@@ -9,3 +10,12 @@
 		span.modal__checkbox-text Запомнить меня
 		a.modal__remember-link.pull-right(href="#") Забыли пароль?
 		input.modal__submit(type="submit" value="Войти")
+// окно обратного звонка
+.modal__window#callback
+	h2.modal__title Заказ звонка
+	form(action="#" method="post")
+		label.modal__label ФИО:
+		input.modal__input(type="text" required)
+		label.modal__label Телефон:
+		input.modal__input.mask(type="text" required)
+		input.modal__submit(type="submit" value="Перезвонить")

@@ -45,4 +45,12 @@ $(function() {
 		autoplay: true,
 		autoplaySpeed: 3000
 	});
+
+	// маска на телефон
+	$('.mask').mask('+8 (999) 999-99-99');
+
+	// открываем меню в моб версии
+	$('.header__mobile-btn').click(function(){
+		$('.header__main-menu-block').slideToggle(500);
+	});
 });

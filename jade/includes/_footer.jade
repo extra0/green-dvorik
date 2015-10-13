@@ -1,13 +1,9 @@
 footer.footer
 	.container
 		.row
-			.footer__sidebar.col-lg-3
-				p.footer__sidebar-development-text Создание и продвижение сайта:
-				a.footer__sidebar-development-link(href="http://dvaslona.ru")
-					img.footer__sidebar-development-img(src="img/footer_dev_logo.png", alt="")
-			.footer__content-wrap.col-lg-9
+			.footer__content-wrap.col-md-9.col-sm-12
 				.footer__content
-					ul.footer__menu-list
+					ul.footer__menu-list.hidden-xs
 						each item in footermenu
 							li.footer__menu-item: a.footer__menu-link(href="#") #{item}
 					p.footer__text © Зеленый дворик, 2007-2015
@@ -20,4 +16,8 @@ footer.footer
 					p.footer__text
 						strong Мичуринск
 					p.footer__text 8-916-636-85-28
+			.footer__sidebar
+				p.footer__sidebar-development-text Создание и продвижение сайта:
+				a.footer__sidebar-development-link(href="http://dvaslona.ru")
+					img.footer__sidebar-development-img(src="img/footer_dev_logo.png", alt="")
 include _script

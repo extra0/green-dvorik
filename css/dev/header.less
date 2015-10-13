@@ -5,6 +5,24 @@
 		font-size: 12px;
 		margin: 17px 0 0 4px;
 	}
+	&__mobile-btn-wrap {
+		text-align: center;
+		margin: 15px 0;
+	}
+	&__mobile-btn {
+		padding: 7px 25px;
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		.gradient-green;
+		&:active,
+		&:focus,
+		&:hover {
+			.hover-gradient;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
 	&-sidebar {
 		&__block {
 			margin: -2px 0 0 0;
@@ -98,6 +116,9 @@
 		height: 16px;
 		border: none;
 	}
+	&__link-wrap {
+		margin-bottom: 10px;
+	}
 	&__user-cart,
 	&__user-enter {
 		position: relative;
@@ -107,7 +128,6 @@
 		margin-left: 26px;
 		font-size: 15px;
 		display: inline-block;
-		margin-bottom: 10px;
 		&:hover,
 		&:focus,
 		&:active {
@@ -122,8 +142,12 @@
 		left: -26px;
 		top: 2px;
 	}
+	&__mobile-btn-wrap {
+		display: none;
+	}
 	&__main-menu-list {
 		/* главное меню */
+		background: #000;
 		margin: 0;
 		list-style-type: none;
 		border: 1px solid @dark-green;
@@ -169,7 +193,7 @@
 .banner {
 	&__block {
 		margin-bottom: 17px;
-		height: 69px;
+		// height: 69px;
 	}
 	&__img {
 		// width: 100%;
