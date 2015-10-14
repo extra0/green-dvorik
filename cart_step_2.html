@@ -178,10 +178,14 @@
               <form action="#" method="post">
                 <div class="cart-step__form-block">
                   <p class="cart-step__form-title">Покупатель</p>
-                  <input id="individual" type="radio" name="buyer" checked class="cart-step__form-radio">
-                  <label for="individual" class="cart-step__form-label">Физическое лицо</label>
-                  <input id="entity" type="radio" name="buyer" class="cart-step__form-radio">
-                  <label for="entity" class="cart-step__form-label">Юридическое лицо</label>
+                  <div class="cart-step__form-label-wrap">
+                    <input id="individual" type="radio" name="buyer" checked class="cart-step__form-radio">
+                    <label for="individual" class="cart-step__form-label">Физическое лицо</label>
+                  </div>
+                  <div class="cart-step__form-label-wrap">
+                    <input id="entity" type="radio" name="buyer" class="cart-step__form-radio">
+                    <label for="entity" class="cart-step__form-label">Юридическое лицо</label>
+                  </div>
                   <div class="cart-step__form-input-block">
                     <div class="cart-step__form-control"><span class="cart-step__form-icon glyphicon glyphicon-user"></span>
                       <input type="text" placeholder="Ф.И.О" required class="cart-step__form-input">

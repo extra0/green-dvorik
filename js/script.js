@@ -71,6 +71,14 @@ $(function() {
 
 	// открываем полный список таблиц на мобле
 	$('.main__show-table').click(function(){
-		$('.main__table-wrapper').fadeToggle(500);
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('.main__table-wrapper').fadeOut(500);
+			$(this).html('Показать все цены')
+		} else {
+			$(this).addClass('active');
+			$('.main__table-wrapper').fadeIn(500);
+			$(this).html('Скрыть все цены');
+		}
 	});
 });

@@ -438,6 +438,7 @@
 		padding: 13px 0;
 		&:first-child {
 			width: 14.3%;
+			padding: 13px 7px 13px 0px;
 		}
 		&:nth-child(2) {
 			width: 39.6%;
@@ -645,6 +646,10 @@
 		top: 1px;
 		margin: 0!important;
 	}
+	&__form-label-wrap {
+		display: inline-block;
+		vertical-align: top;
+	}
 	&__form-block {
 		border: 1px solid @dark-green;
 		padding: 9px 17px 13px 17px;
@@ -833,6 +838,7 @@
 		line-height: 17px;
 	}
 	&__info-price-table {
+		margin: 10px 0;
 		width: 100%;
 		td {
 			padding: 4px 0 3px 0;
@@ -906,7 +912,7 @@
 	}
 	&__modal-window {
 		/* модальное окно возраста растений */
-		width: 790px;
+		max-width: 790px;
 		display: none;
 		border-radius: @radius;
 		background: #fff;

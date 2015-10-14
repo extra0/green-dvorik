@@ -4,6 +4,7 @@
 		padding: 15px 0 0 0;
 		&-sidebar {
 			&__block {
+				float: none!important;
 				padding: 0 15px;
 			}
 		}
@@ -38,6 +39,11 @@
 			display: block;
 		}
 	}
+	.breadcrumbs {
+		&__block {
+			margin: 0 0 24px 0;
+		}
+	}
 	.modal {
 		&__title {
 			font-size: 28px;
@@ -45,6 +51,9 @@
 		&__remember-link {
 			display: block;
 			float: none!important;
+		}
+		&__text {
+			margin: 5px 0 15px 0;
 		}
 	}
 	.footer {
@@ -79,6 +88,237 @@
 		}
 		&__show-table {
 			display: inline-block!important;
+		}
+	}
+	.cart-step {
+		&__radio-pay-input + label {
+			display: -webkit-inline-box; 
+			display: -moz-inline-box;   
+			display: -ms-inline-flexbox; 
+			display: -webkit-inline-flex;
+			display: inline-flex;
+			padding: 0 30px;
+		}
+	}
+	// !!!!!!!!!!!!
+	.category {
+		&__intro-text {
+			padding: 15px 0 0 0;
+		}
+		&-header {
+			&__sort-block {
+				float: none;
+				margin-bottom: 10px;
+			}
+			&__sort-item {
+				margin-left: 0;
+				margin-right: 8px;
+				&:last-child {
+					margin-right: 0;
+				}
+				&:before {
+					display: none;
+				}
+			}
+			&__sort-link {
+				font-size: 12px;
+			}
+			&__block-title {
+				font-size: 20px
+			}
+		}
+		&__advice-title {
+			padding: 15px 0 0 0;
+		}
+	}
+	.main {
+		&__map {
+			height: 300px;
+		}
+	}
+	.gallery {
+		&__block {
+			justify-content: space-between;
+		}
+		&__img-link {
+			flex-basis: 32%;
+		}
+		&__img {
+			width: 100%;
+		}
+	}
+	.slider-nav .slick-prev,
+	.slider-nav .slick-next {
+		display: none!important;
+	}
+	.slider-nav.slick-slider {
+		max-width: none;
+		margin: 0 0 20px 0;
+	}
+	.product {
+		&__info-price-table-title {
+			font-size: 12px;
+		}
+		&__info-plant-age {
+			width: 50%;
+		}
+		&__modal-text {
+			font-size: 14px;
+			line-height: 16px;
+		}
+		&__modal-age {
+			font-size: 14px;
+			width: 29.7%;
+		}
+	}
+	.attention {
+		&__list {
+			text-align: center;
+		}
+		&__item {
+			margin: 0 0 10px 0;
+			width: 100%;
+			&:nth-child(2) {
+				width: 100%;
+				margin: 0 0 10px 0;
+				&:before,
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	.advantages {
+		&__item {
+			width: 43%;
+			margin: 0 2% 30px 2%;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+@media (max-width: 500px) {
+	.cart-step {
+		&__form-control {
+			flex-basis: 100%;
+			margin: 0 0 15px 0;
+			&._half-block {
+				flex-basis: 100%;
+			}
+		}
+		&__form-label-wrap {
+			display: block;
+		}
+		&__order-text {
+			font-size: 16px;
+			line-height: 20px;
+		}
+		&__order-info-btn {
+			padding: 7px 15px;
+		}
+	}
+	.order {
+		&__table {
+			td {
+				width: 100%!important;
+				display: block;
+			}
+		}
+		&__status {
+			padding: 3px 5px;
+		}
+		&__date {
+			display: block;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.cart-step {
+		&__pay-item {
+			width: 100%;
+			margin: 0 1.5% 25px 1.5%;
+		}
+	}
+}
+@media (min-width: 320px) and (max-width: 499px) {
+	.cart-step {
+		&__link {
+			display: block;
+		}
+		&__item-delete {
+			text-indent: -9999px;
+			padding: 9px 15px;
+			background: none;
+			&:hover {
+				background: none;
+			}
+		}
+		&__product-age,
+		&__product-name {
+			font-size: 12px;
+			margin: -3px 0 9px 0;
+		}
+		&__product-item {
+			.cart-step__product-cost,
+			.cart-step__product-price {
+				font-size: 12px;
+			}
+			&:nth-child(4) {
+				width: 26%;
+			}
+			&:first-child {
+				width: 20%;
+				padding: 13px 5px 13px 0;
+			}
+		}
+		&__quantity-changer {
+			display: block;
+			margin: 7px 9px;
+		}
+		&__quantity-input {
+			margin: 0;
+		}
+		&__product-price {
+			margin: 32px 0 0 0px;
+		}
+		&__plant-text-title {
+			font-size: 15px;
+		}
+		&__plant-detail-block p,
+		&__plant-text {
+			font-size: 13px;
+			line-height: 15px;
+		}
+		&__plant-item {
+			&:first-child {
+				width: 18%;
+				padding: 22px 8px;
+			}
+			&:nth-child(3) {
+				padding-left: 8px;
+				.cart-step__product-price {
+					margin-top: 47px;
+					font-size: 12px;
+				}
+				.cart-step__product-cost {
+					font-size: 12px;
+				}
+			}
+		}
+		&__plant-label-checkbox {
+			margin: 46px 0 0 -5px;
+		}
+		&__inner-block {
+			padding: 26px 5px;
+		}
+		&__footer-block {
+			.cart-step__product-price {
+				display: block;
+			    margin: 5px 0;
+			}
+		}
+		&__plant-table {
+			margin-bottom: 10px;
 		}
 	}
 }
@@ -124,12 +364,100 @@
 			text-align: right;
 		}
 	}
+	.cart-step {
+		&__link {
+			display: block;
+		}
+		&__item-delete {
+			text-indent: -9999px;
+			padding: 9px 20px;
+			background: none;
+			&:hover {
+				background: none;
+			}
+		}
+		&__product-age,
+		&__product-name {
+			font-size: 12px;
+		}
+		&__product-item {
+			&:first-child {
+				width: 20%;
+				padding: 13px 13px 13px 0;
+			}
+		}
+		&__quantity-changer {
+			display: block;
+			margin: 7px 9px;
+		}
+		&__quantity-input {
+			margin: 0;
+		}
+		&__product-price {
+			margin: 29px 0 0 -10px;
+			font-size: 14px;
+		}
+		&__product-cost {
+			font-size: 16px;
+		}
+		&__plant-text-title {
+			font-size: 15px;
+		}
+		&__plant-detail-block p,
+		&__plant-text {
+			font-size: 13px;
+		}
+		&__plant-item {
+			&:first-child {
+				width: 18%;
+				padding: 22px 8px;
+			}
+			&:nth-child(3) {
+				padding-left: 40px;
+				.cart-step__product-price {
+					margin-top: 47px;
+				}
+			}
+		}
+		&__plant-label-checkbox {
+			margin: 46px 0 0 -5px;
+		}
+		//  шаг 2
+		&__form-input-block {
+			justify-content: space-between;
+		}
+		&__form-control {
+			margin: 0 0 15px 0;
+		}
+	}
+	.attention {
+		&__item {
+			width: 31%;
+			vertical-align: top;
+			&:nth-child(2) {
+				width: 31%;
+			}
+		}
+	}
+	.product {
+		&__info-plant-quantity {
+			.cart-step__quantity-changer {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
 }
 @media (min-width: 600px) and (max-width: 768px) {
 	.category-body {
 		&__product-preview {
 			width: 50%;
 			display: inline-block;
+		}
+	}
+	.advantages {
+		&__item {
+			width: 27%;
 		}
 	}
 }
@@ -187,6 +515,139 @@
 			font-size: 13px;
 		}
 	}
+	.cart-step {
+		&__link {
+			display: block;
+		}
+		&__item-delete {
+			text-indent: -9999px;
+			padding: 9px 20px;
+			background: none;
+			&:hover {
+				background: none;
+			}
+		}
+		&__product-age,
+		&__product-name {
+			font-size: 12px;
+		}
+		&__product-item {
+			&:first-child {
+				width: 20%;
+				padding: 13px 13px 13px 0;
+			}
+		}
+		&__quantity-changer {
+			display: block;
+			margin: 7px 9px;
+		}
+		&__quantity-input {
+			margin: 0;
+		}
+		&__product-price {
+			margin: 29px 0 0 -10px;
+			font-size: 14px;
+		}
+		&__product-cost {
+			font-size: 16px;
+		}
+		&__plant-text-title {
+			font-size: 15px;
+		}
+		&__plant-detail-block p,
+		&__plant-text {
+			font-size: 13px;
+		}
+		&__plant-item {
+			&:first-child {
+				width: 18%;
+				padding: 22px 8px;
+			}
+			&:nth-child(3) {
+				padding-left: 40px;
+				.cart-step__product-price {
+					margin-top: 47px;
+				}
+			}
+		}
+		&__plant-label-checkbox {
+			margin: 46px 0 0 -5px;
+		}
+		// шаг 2
+		&__form-control {
+			flex-basis: 100%;
+			margin: 0 0 15px 0;
+			&._half-block {
+				flex-basis: 100%;
+			}
+		}
+		&__pay-item {
+			width: 100%;
+			margin: 0 1.5% 30px 1.5%;
+		}
+	}
+	.category {
+		&-header {
+			&__sort-block {
+				float: none;
+				margin-bottom: 10px;
+			}
+			&__sort-item {
+				margin-left: 0;
+				margin-right: 8px;
+				&:last-child {
+					margin-right: 0;
+				}
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+	.modal {
+		&__text {
+			margin: 5px 0 15px 0;
+		}
+	}
+	.slider-nav.slick-slider {
+		margin-left: 9px;
+		max-width: 450px;
+	}
+	.product {
+		&__info-plant-price,
+		&__info-plant-age {
+			width: 40%;
+		}
+		&__info-plant-quantity {
+			.cart-step__quantity-changer {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+	}
+	.attention {
+		&__list {
+			text-align: center;
+		}
+		&__item {
+			width: 31%;
+			vertical-align: top;
+			&:nth-child(2) {
+				width: 31%;
+				&:before,
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	.advantages {
+		&__item {
+			width: 37%;
+			margin: 0 2% 20px 2%;
+			vertical-align: top;
+		}
+	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.header {
@@ -233,5 +694,13 @@
 			}
 		}
 	}
-
+	.cart-step {
+		&__form-control {
+			margin: 0 12px 15px 0;
+		}
+	}
+	.slider-nav.slick-slider {
+		margin-left: 13px;
+		max-width: 245px;
+	}
 }

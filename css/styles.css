@@ -1196,6 +1196,7 @@ textarea {
 }
 .cart-step__product-item:first-child {
   width: 14.3%;
+  padding: 13px 7px 13px 0px;
 }
 .cart-step__product-item:nth-child(2) {
   width: 39.6%;
@@ -1462,6 +1463,10 @@ textarea {
   top: 1px;
   margin: 0!important;
 }
+.cart-step__form-label-wrap {
+  display: inline-block;
+  vertical-align: top;
+}
 .cart-step__form-block {
   border: 1px solid #2e572e;
   padding: 9px 17px 13px 17px;
@@ -1721,6 +1726,7 @@ textarea {
   line-height: 17px;
 }
 .product__info-price-table {
+  margin: 10px 0;
   width: 100%;
 }
 .product__info-price-table td {
@@ -1794,7 +1800,7 @@ textarea {
 }
 .product__modal-window {
   /* модальное окно возраста растений */
-  width: 790px;
+  max-width: 790px;
   display: none;
   border-radius: 10px;
   background: #fff;
@@ -2542,6 +2548,7 @@ textarea {
     padding: 15px 0 0 0;
   }
   .header-sidebar__block {
+    float: none!important;
     padding: 0 15px;
   }
   .header__main-menu-block {
@@ -2574,12 +2581,18 @@ textarea {
   .header__mobile-btn-wrap {
     display: block;
   }
+  .breadcrumbs__block {
+    margin: 0 0 24px 0;
+  }
   .modal__title {
     font-size: 28px;
   }
   .modal__remember-link {
     display: block;
     float: none!important;
+  }
+  .modal__text {
+    margin: 5px 0 15px 0;
   }
   .footer__sidebar {
     position: relative;
@@ -2606,6 +2619,204 @@ textarea {
   }
   .main__show-table {
     display: inline-block !important;
+  }
+  .cart-step__radio-pay-input + label {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    padding: 0 30px;
+  }
+  .category__intro-text {
+    padding: 15px 0 0 0;
+  }
+  .category-header__sort-block {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .category-header__sort-item {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+  .category-header__sort-item:last-child {
+    margin-right: 0;
+  }
+  .category-header__sort-item:before {
+    display: none;
+  }
+  .category-header__sort-link {
+    font-size: 12px;
+  }
+  .category-header__block-title {
+    font-size: 20px;
+  }
+  .category__advice-title {
+    padding: 15px 0 0 0;
+  }
+  .main__map {
+    height: 300px;
+  }
+  .gallery__block {
+    justify-content: space-between;
+  }
+  .gallery__img-link {
+    flex-basis: 32%;
+  }
+  .gallery__img {
+    width: 100%;
+  }
+  .slider-nav .slick-prev,
+  .slider-nav .slick-next {
+    display: none!important;
+  }
+  .slider-nav.slick-slider {
+    max-width: none;
+    margin: 0 0 20px 0;
+  }
+  .product__info-price-table-title {
+    font-size: 12px;
+  }
+  .product__info-plant-age {
+    width: 50%;
+  }
+  .product__modal-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .product__modal-age {
+    font-size: 14px;
+    width: 29.7%;
+  }
+  .attention__list {
+    text-align: center;
+  }
+  .attention__item {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .attention__item:nth-child(2) {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .attention__item:nth-child(2):before,
+  .attention__item:nth-child(2):after {
+    display: none;
+  }
+  .advantages__item {
+    width: 43%;
+    margin: 0 2% 30px 2%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+@media (max-width: 500px) {
+  .cart-step__form-control {
+    flex-basis: 100%;
+    margin: 0 0 15px 0;
+  }
+  .cart-step__form-control._half-block {
+    flex-basis: 100%;
+  }
+  .cart-step__form-label-wrap {
+    display: block;
+  }
+  .cart-step__order-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .cart-step__order-info-btn {
+    padding: 7px 15px;
+  }
+  .order__table td {
+    width: 100%!important;
+    display: block;
+  }
+  .order__status {
+    padding: 3px 5px;
+  }
+  .order__date {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .cart-step__pay-item {
+    width: 100%;
+    margin: 0 1.5% 25px 1.5%;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .cart-step__link {
+    display: block;
+  }
+  .cart-step__item-delete {
+    text-indent: -9999px;
+    padding: 9px 15px;
+    background: none;
+  }
+  .cart-step__item-delete:hover {
+    background: none;
+  }
+  .cart-step__product-age,
+  .cart-step__product-name {
+    font-size: 12px;
+    margin: -3px 0 9px 0;
+  }
+  .cart-step__product-item .cart-step__product-cost,
+  .cart-step__product-item .cart-step__product-price {
+    font-size: 12px;
+  }
+  .cart-step__product-item:nth-child(4) {
+    width: 26%;
+  }
+  .cart-step__product-item:first-child {
+    width: 20%;
+    padding: 13px 5px 13px 0;
+  }
+  .cart-step__quantity-changer {
+    display: block;
+    margin: 7px 9px;
+  }
+  .cart-step__quantity-input {
+    margin: 0;
+  }
+  .cart-step__product-price {
+    margin: 32px 0 0 0px;
+  }
+  .cart-step__plant-text-title {
+    font-size: 15px;
+  }
+  .cart-step__plant-detail-block p,
+  .cart-step__plant-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .cart-step__plant-item:first-child {
+    width: 18%;
+    padding: 22px 8px;
+  }
+  .cart-step__plant-item:nth-child(3) {
+    padding-left: 8px;
+  }
+  .cart-step__plant-item:nth-child(3) .cart-step__product-price {
+    margin-top: 47px;
+    font-size: 12px;
+  }
+  .cart-step__plant-item:nth-child(3) .cart-step__product-cost {
+    font-size: 12px;
+  }
+  .cart-step__plant-label-checkbox {
+    margin: 46px 0 0 -5px;
+  }
+  .cart-step__inner-block {
+    padding: 26px 5px;
+  }
+  .cart-step__footer-block .cart-step__product-price {
+    display: block;
+    margin: 5px 0;
+  }
+  .cart-step__plant-table {
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 500px) and (max-width: 768px) {
@@ -2646,11 +2857,84 @@ textarea {
     margin: 0;
     text-align: right;
   }
+  .cart-step__link {
+    display: block;
+  }
+  .cart-step__item-delete {
+    text-indent: -9999px;
+    padding: 9px 20px;
+    background: none;
+  }
+  .cart-step__item-delete:hover {
+    background: none;
+  }
+  .cart-step__product-age,
+  .cart-step__product-name {
+    font-size: 12px;
+  }
+  .cart-step__product-item:first-child {
+    width: 20%;
+    padding: 13px 13px 13px 0;
+  }
+  .cart-step__quantity-changer {
+    display: block;
+    margin: 7px 9px;
+  }
+  .cart-step__quantity-input {
+    margin: 0;
+  }
+  .cart-step__product-price {
+    margin: 29px 0 0 -10px;
+    font-size: 14px;
+  }
+  .cart-step__product-cost {
+    font-size: 16px;
+  }
+  .cart-step__plant-text-title {
+    font-size: 15px;
+  }
+  .cart-step__plant-detail-block p,
+  .cart-step__plant-text {
+    font-size: 13px;
+  }
+  .cart-step__plant-item:first-child {
+    width: 18%;
+    padding: 22px 8px;
+  }
+  .cart-step__plant-item:nth-child(3) {
+    padding-left: 40px;
+  }
+  .cart-step__plant-item:nth-child(3) .cart-step__product-price {
+    margin-top: 47px;
+  }
+  .cart-step__plant-label-checkbox {
+    margin: 46px 0 0 -5px;
+  }
+  .cart-step__form-input-block {
+    justify-content: space-between;
+  }
+  .cart-step__form-control {
+    margin: 0 0 15px 0;
+  }
+  .attention__item {
+    width: 31%;
+    vertical-align: top;
+  }
+  .attention__item:nth-child(2) {
+    width: 31%;
+  }
+  .product__info-plant-quantity .cart-step__quantity-changer {
+    display: inline-block;
+    margin: 0;
+  }
 }
 @media (min-width: 600px) and (max-width: 768px) {
   .category-body__product-preview {
     width: 50%;
     display: inline-block;
+  }
+  .advantages__item {
+    width: 27%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2697,6 +2981,118 @@ textarea {
   .footer__menu-link {
     font-size: 13px;
   }
+  .cart-step__link {
+    display: block;
+  }
+  .cart-step__item-delete {
+    text-indent: -9999px;
+    padding: 9px 20px;
+    background: none;
+  }
+  .cart-step__item-delete:hover {
+    background: none;
+  }
+  .cart-step__product-age,
+  .cart-step__product-name {
+    font-size: 12px;
+  }
+  .cart-step__product-item:first-child {
+    width: 20%;
+    padding: 13px 13px 13px 0;
+  }
+  .cart-step__quantity-changer {
+    display: block;
+    margin: 7px 9px;
+  }
+  .cart-step__quantity-input {
+    margin: 0;
+  }
+  .cart-step__product-price {
+    margin: 29px 0 0 -10px;
+    font-size: 14px;
+  }
+  .cart-step__product-cost {
+    font-size: 16px;
+  }
+  .cart-step__plant-text-title {
+    font-size: 15px;
+  }
+  .cart-step__plant-detail-block p,
+  .cart-step__plant-text {
+    font-size: 13px;
+  }
+  .cart-step__plant-item:first-child {
+    width: 18%;
+    padding: 22px 8px;
+  }
+  .cart-step__plant-item:nth-child(3) {
+    padding-left: 40px;
+  }
+  .cart-step__plant-item:nth-child(3) .cart-step__product-price {
+    margin-top: 47px;
+  }
+  .cart-step__plant-label-checkbox {
+    margin: 46px 0 0 -5px;
+  }
+  .cart-step__form-control {
+    flex-basis: 100%;
+    margin: 0 0 15px 0;
+  }
+  .cart-step__form-control._half-block {
+    flex-basis: 100%;
+  }
+  .cart-step__pay-item {
+    width: 100%;
+    margin: 0 1.5% 30px 1.5%;
+  }
+  .category-header__sort-block {
+    float: none;
+    margin-bottom: 10px;
+  }
+  .category-header__sort-item {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+  .category-header__sort-item:last-child {
+    margin-right: 0;
+  }
+  .category-header__sort-item:before {
+    display: none;
+  }
+  .modal__text {
+    margin: 5px 0 15px 0;
+  }
+  .slider-nav.slick-slider {
+    margin-left: 9px;
+    max-width: 450px;
+  }
+  .product__info-plant-price,
+  .product__info-plant-age {
+    width: 40%;
+  }
+  .product__info-plant-quantity .cart-step__quantity-changer {
+    display: inline-block;
+    margin: 0;
+  }
+  .attention__list {
+    text-align: center;
+  }
+  .attention__item {
+    width: 31%;
+    vertical-align: top;
+  }
+  .attention__item:nth-child(2) {
+    width: 31%;
+  }
+  .attention__item:nth-child(2):before,
+  .attention__item:nth-child(2):after {
+    display: none;
+  }
+  .advantages__item {
+    width: 37%;
+    margin: 0 2% 20px 2%;
+    vertical-align: top;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .header__main-menu-item {
@@ -2732,5 +3128,12 @@ textarea {
   .footer__menu-item:before {
     right: -7px;
     width: 1px;
+  }
+  .cart-step__form-control {
+    margin: 0 12px 15px 0;
+  }
+  .slider-nav.slick-slider {
+    margin-left: 13px;
+    max-width: 245px;
   }
 }

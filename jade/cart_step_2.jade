@@ -21,10 +21,12 @@ block content
 					form(action="#" method="post")
 						.cart-step__form-block
 							p.cart-step__form-title Покупатель
-							input.cart-step__form-radio#individual(type="radio" name="buyer" checked)
-							label.cart-step__form-label(for="individual") Физическое лицо
-							input.cart-step__form-radio#entity(type="radio" name="buyer")
-							label.cart-step__form-label(for="entity") Юридическое лицо
+							.cart-step__form-label-wrap
+								input.cart-step__form-radio#individual(type="radio" name="buyer" checked)
+								label.cart-step__form-label(for="individual") Физическое лицо
+							.cart-step__form-label-wrap
+								input.cart-step__form-radio#entity(type="radio" name="buyer")
+								label.cart-step__form-label(for="entity") Юридическое лицо
 							.cart-step__form-input-block
 								.cart-step__form-control
 									span.cart-step__form-icon.glyphicon.glyphicon-user
