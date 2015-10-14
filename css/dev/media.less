@@ -138,10 +138,14 @@
 	}
 	.gallery {
 		&__block {
+			-webkit-justify-content: space-around;
 			justify-content: space-between;
 		}
 		&__img-link {
-			flex-basis: 32%;
+			flex-basis: 31%;
+			-webkit-flex-basis: 31%;
+			width: 31%;
+			margin: 10px 2px;
 		}
 		&__img {
 			width: 100%;
@@ -201,9 +205,11 @@
 	.cart-step {
 		&__form-control {
 			flex-basis: 100%;
+			width: 100%;
 			margin: 0 0 15px 0;
 			&._half-block {
 				flex-basis: 100%;
+				width: 100%;
 			}
 		}
 		&__form-label-wrap {
@@ -576,9 +582,11 @@
 		// шаг 2
 		&__form-control {
 			flex-basis: 100%;
+			width: 100%;
 			margin: 0 0 15px 0;
 			&._half-block {
 				flex-basis: 100%;
+				width: 100%;
 			}
 		}
 		&__pay-item {

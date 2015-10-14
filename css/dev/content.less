@@ -667,10 +667,12 @@
 		display: -webkit-flex;
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		margin-top: 15px;
 	}
 	&__form-control {
 		flex-basis: 32%;
+		width: 32%;
 		margin: 0 15px 15px 0;
 		position: relative;
 		&:last-child {
@@ -678,6 +680,7 @@
 		}
 		&._half-block {
 			flex-basis: 45%;
+			width: 45%;
 		}
 	}
 	&__form-icon {
@@ -736,9 +739,11 @@
 		display: -webkit-flex;
 		display: flex;
 		justify-content: center;
+		-webkit-justify-content: center;
 		height: 42px;
 		cursor: pointer;
 		align-items: center;
+		-webkit-align-items: center;
 		line-height: 16px;
 		&:hover {
 			.hover-gradient;
@@ -1331,7 +1336,11 @@
 		display: -ms-flexbox; 
 		display: -webkit-flex;
 		display: flex;
+		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		-webkit-justify-content: space-around;
 		justify-content: space-around;
 	}
 	&__img-link {

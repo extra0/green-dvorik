@@ -51,6 +51,9 @@ body {
   height: 100%;
   color: #ffffff;
 }
+.main-wrapper {
+  overflow: hidden;
+}
 .container {
   font-size: 14px;
   margin: 0 auto;
@@ -1484,10 +1487,12 @@ textarea {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   margin-top: 15px;
 }
 .cart-step__form-control {
   flex-basis: 32%;
+  width: 32%;
   margin: 0 15px 15px 0;
   position: relative;
 }
@@ -1496,6 +1501,7 @@ textarea {
 }
 .cart-step__form-control._half-block {
   flex-basis: 45%;
+  width: 45%;
 }
 .cart-step__form-icon {
   position: absolute;
@@ -1568,9 +1574,11 @@ textarea {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  -webkit-justify-content: center;
   height: 42px;
   cursor: pointer;
   align-items: center;
+  -webkit-align-items: center;
   line-height: 16px;
 }
 .cart-step__pay-label:hover {
@@ -2289,7 +2297,11 @@ textarea {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: space-around;
   justify-content: space-around;
 }
 .gallery__img-link {
@@ -2658,10 +2670,14 @@ textarea {
     height: 300px;
   }
   .gallery__block {
+    -webkit-justify-content: space-around;
     justify-content: space-between;
   }
   .gallery__img-link {
-    flex-basis: 32%;
+    flex-basis: 31%;
+    -webkit-flex-basis: 31%;
+    width: 31%;
+    margin: 10px 2px;
   }
   .gallery__img {
     width: 100%;
@@ -2713,10 +2729,12 @@ textarea {
 @media (max-width: 500px) {
   .cart-step__form-control {
     flex-basis: 100%;
+    width: 100%;
     margin: 0 0 15px 0;
   }
   .cart-step__form-control._half-block {
     flex-basis: 100%;
+    width: 100%;
   }
   .cart-step__form-label-wrap {
     display: block;
@@ -3036,10 +3054,12 @@ textarea {
   }
   .cart-step__form-control {
     flex-basis: 100%;
+    width: 100%;
     margin: 0 0 15px 0;
   }
   .cart-step__form-control._half-block {
     flex-basis: 100%;
+    width: 100%;
   }
   .cart-step__pay-item {
     width: 100%;
