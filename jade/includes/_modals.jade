@@ -8,7 +8,7 @@
 		input.modal__input(type="password" required)
 		input(type="checkbox")
 		span.modal__checkbox-text Запомнить меня
-		a.modal__remember-link.pull-right(href="#") Забыли пароль?
+		a.modal__remember-link.pull-right.fancybox(href="#remember") Забыли пароль?
 		input.modal__submit(type="submit" value="Войти")
 // окно обратного звонка
 .modal__window#callback
@@ -19,3 +19,10 @@
 		label.modal__label Телефон:
 		input.modal__input.mask(type="text" required)
 		input.modal__submit(type="submit" value="Перезвонить")
+// окно восстановления
+.modal__window#remember
+	h2.modal__title Восстановить
+	form(action="#" method="post")
+		label.modal__label Ваш логин
+		input.modal__input(type="text" required)
+		input.modal__submit(type="submit" value="Восстановить")

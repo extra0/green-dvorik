@@ -1491,7 +1491,6 @@ textarea {
   margin-top: 15px;
 }
 .cart-step__form-control {
-  flex-basis: 32%;
   width: 32%;
   margin: 0 15px 15px 0;
   position: relative;
@@ -1500,7 +1499,6 @@ textarea {
   margin: 0 0 15px 0;
 }
 .cart-step__form-control._half-block {
-  flex-basis: 45%;
   width: 45%;
 }
 .cart-step__form-icon {

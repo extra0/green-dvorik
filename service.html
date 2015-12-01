@@ -20,7 +20,7 @@
         <input type="text" required class="modal__input">
         <label class="modal__label">Пароль</label>
         <input type="password" required class="modal__input">
-        <input type="checkbox"><span class="modal__checkbox-text">Запомнить меня</span><a href="#" class="modal__remember-link pull-right">Забыли пароль?</a>
+        <input type="checkbox"><span class="modal__checkbox-text">Запомнить меня</span><a href="#remember" class="modal__remember-link pull-right fancybox">Забыли пароль?</a>
         <input type="submit" value="Войти" class="modal__submit">
       </form>
     </div>
@@ -33,6 +33,15 @@
         <label class="modal__label">Телефон:</label>
         <input type="text" required class="modal__input mask">
         <input type="submit" value="Перезвонить" class="modal__submit">
+      </form>
+    </div>
+    <!-- окно восстановления-->
+    <div id="remember" class="modal__window">
+      <h2 class="modal__title">Восстановить</h2>
+      <form action="#" method="post">
+        <label class="modal__label">Ваш логин</label>
+        <input type="text" required class="modal__input">
+        <input type="submit" value="Восстановить" class="modal__submit">
       </form>
     </div>
     <div class="main-wrapper">
